@@ -1,0 +1,42 @@
+@font-face {
+    font-family: ProjectFont;
+    src: url(./font/DBHeaventCondv321.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: ProjectFont;
+}
+
+nav{
+    background-color: #45474b;
+    color: white;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+.right_icon{
+    margin-left: auto;
+    align-items: center;
+}
+
+.right_icon img{
+    margin-left: 20px;
+}
+
+section h1{
+    text-align: center;
+    font-size: 300%;
+}
