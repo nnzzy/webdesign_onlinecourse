@@ -11,14 +11,16 @@
 
     <div class="container">
         <div class="exam-header">
-            <a href="#">ย้อนกลับ</a>
+            <button class="back-button">
+                <span class="arrow"> ← </span> ย้อนกลับ
+            </button>
             <h1>ข้อสอบภาษาไทย</h1>
             <div class="timer">⏰ 00:01</div>
         </div>
 
         <div class="exam-content">
             <div class="question-nav">
-                <button>1</button>
+                <button class="active">1</button>
                 <button>2</button>
                 <button>3</button>
                 <button>4</button>
@@ -32,15 +34,15 @@
             <div class="question">
                 <p>1. ปลามีกี่ขา</p>
                 <form>
-                    <label><input type="radio" name="answer"> ก. มี 8 ขา</label><br>
-                    <label><input type="radio" name="answer"> ข. มี 4 ขา</label><br>
-                    <label><input type="radio" name="answer"> ค. มี 2 ขา</label><br>
-                    <label><input type="radio" name="answer"> ง. ไม่มีขา</label><br>
+                    <label><input type="radio" name="answer" style="height:20px; width:20px;"> ก. มี 8 ขา</label><br>
+                    <label><input type="radio" name="answer" style="height:20px; width:20px;"> ข. มี 4 ขา</label><br>
+                    <label><input type="radio" name="answer" style="height:20px; width:20px;"> ค. มี 2 ขา</label><br>
+                    <label><input type="radio" name="answer" style="height:20px; width:20px;"> ง. ไม่มีขา</label><br>
                 </form>
             </div>
             
         </div>
-        <button type="submit" class="submit-btn">ข้อถัดไป</button>
+        <button type="submit" class="next-btn">ข้อถัดไป</button>
     </div>
 </body>
 </html>
