@@ -47,19 +47,14 @@ h2 {
     margin-bottom: 20px;
 }
 
-.course-review {
+.course-review-form {
     display: flex;
+    margin: 40px auto;
     justify-content: space-between;
     align-items: flex-start;
     border: 1px solid #000000;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 40px;
-}
-
-.small-gray {
-    color: #888; 
-    font-size: 16px; 
 }
 
 .course-info {
@@ -67,6 +62,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 30%;
+    text-align: center;
+    font-size: 26px;
 }
 
 .course-image {
@@ -77,29 +74,19 @@ h2 {
     border: thin solid black;
 }
 
-.course-details h3 {
-    text-align: center;
+.review-form {
+    width: 65%;
+}
+
+.review-form h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.course-details p {
-    text-align: center;
+.review-form p {
     font-size: 14px;
     color: #555;
-}
-
-.reviews {
-    width: 60%;
-}
-
-.review_c{
-    float: right;
-    border: thin solid black;
-    width: 160px;
-    height: 80px;
-    text-align: center;
-    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .rating {
@@ -107,8 +94,8 @@ h2 {
 }
 
 .rating p {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .stars {
@@ -116,51 +103,53 @@ h2 {
     color: #ffd700;
 }
 
-.review-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.review {
-    display: flex;
-    align-items: flex-start;
+.comment-box {
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #a1a1a1;
 }
 
-.user-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
+.comment-box textarea {
+    width: 100%;
+    max-width: 565px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-.review-content p:first-child {
-    font-weight: bold;
-    margin-bottom: 5px;
+.submit-review {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    margin-right: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
 }
 
-.review-content p:last-child {
-    color: #555;
+.submit-review:hover {
+    background-color: #e5b700;
 }
+
 
 @media screen and (max-width: 1279px) {
     .review-container {
-        width: 90%; 
+        width: 90%;
+    }
+    .course-review-form{
+        padding-left: 40px;
+    }
+
+    .comment-box textarea {
+        width: 90%;
     }
 
     .course-info {
-        width: 300px;
+        margin-bottom: 20px;
     }
-
-    .rating p {
-        font-size: 20px;
-    }
-    .course-details p {
-        text-align: center;
-        font-size: 14px;
-        color: #555;
+    .submit-review{
+        margin-right: 6%;
     }
 }
 
@@ -171,33 +160,32 @@ h2 {
     }
 
     .course-image {
-        width: 120px; 
+        width: 200px; 
     }
 
-    .course-review {
+    .course-review-form {
         flex-direction: column;
         padding: 15px;
     }
 
-    .course-info, .reviews {
+    .course-info, .review-form {
         width: 100%;
     }
 
-    .review-content{
-        width: 250px;
-    }
-
-    .user-photo {
-        margin-bottom: 10px;
+    .submit-review {
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .rating p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
-    .review_c{
-        width: 80px;
-        height: 65px;
+    .stars {
+        font-size: 20px;
+    }
+
+    .submit-review{
+        margin-right: 3%;
     }
 }
-

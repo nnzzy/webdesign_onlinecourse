@@ -51,6 +51,10 @@ body {
     margin-bottom: 20px;
 }
 
+.exam-header a {
+    text-decoration: none;
+}
+
 .question p {
     font-size: 2rem; 
 }
