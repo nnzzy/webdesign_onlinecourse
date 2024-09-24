@@ -51,6 +51,10 @@ body {
     margin-bottom: 20px;
 }
 
+.exam-header a {
+    text-decoration: none;
+}
+
 .question p {
     font-size: 2rem; 
 }
@@ -111,6 +115,7 @@ input{
 .next-btn:hover{
     background-color: #baab71; 
 }
+
 @media screen and (max-width: 1279px) {
     .container{
         width: 80%;
@@ -147,7 +152,6 @@ input{
     .question p{
         font-size: 1.5rem;
     }
-
 
     .question-nav {
         display: grid;
