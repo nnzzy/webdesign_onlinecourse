@@ -1,6 +1,6 @@
 @font-face {
     font-family: ProjectFont;
-    src: url(/font/DBHeaventCondv321.ttf);
+    src: url(/font/DBHeaventCondv321.woff) format('woff2');
 }
 
 body{
