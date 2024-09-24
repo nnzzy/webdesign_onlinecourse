@@ -8,22 +8,39 @@ body{
     font-family: ProjectFont !important;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.icon{
+    display: none;
 }
 
 nav{
+    width: 100%;
+    height: auto;
     background-color: #45474b;
     color: white;
     display: flex;
     align-items: center;
 }
 
+nav .link {
+    display: flex;
+    align-items: center;
+}
+
 nav a{
     float: left;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 0px 20px;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 2em;
 }
 
 nav a:hover{
@@ -47,10 +64,13 @@ nav a:hover{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 1.5em; /* ปรับขนาดตัวหนังสือเล็กลง */
+    font-size: 1.2em; 
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 
 .right_icon{
@@ -58,8 +78,9 @@ nav a:hover{
 }
 
 .right_icon img{
-    margin-left: 20px;
     align-items: center;
+    width: 30px;
+    height: 30px;
 }
 
 section h1{
@@ -67,18 +88,45 @@ section h1{
     font-size: 4em;
 }
 
+.block1{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
+}
+
+.block2{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: #404041 0px 0px 8px ;
+}
+
+
+
 .subjects-wrapper{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 10px;
     justify-content: center;
     justify-items: center;
 }
 
+.subject{
+    width: 70%;
+}
+
 .subjects-wrapper .subject button{
-    width: 150px;
-    height: 60px;
+    width: 100%;
+    height: auto;
     font-size: 2em;
     text-align: center;
     background-color: #F4CE14;
@@ -108,7 +156,7 @@ section h1{
     height: auto;
 }
 
-.promotions{
+.package{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -146,4 +194,129 @@ section h1{
 .buybutton button a{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 1279px) {
+    .subjects-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .subjects-wrapper .subject button{
+        width: 100%;
+        height: auto;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    nav a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+
+    nav img{
+        width: 50%;
+        height: auto;
+    }
+    .dropdown-content a {
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2em; 
+    }
+
+    section h1{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .buybutton button{
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .subjects-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    section h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .buybutton button{
+        font-size: 1em;
+    }
+
+    nav .WebLogo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .UserLogo{
+        display: none;
+    }
+
+    nav #mylink {
+        display: none;
+        flex-direction: column;
+        background-color: #3d3d3d;
+        position: absolute;
+        top: 40px;
+        left: -250px; 
+        width: fit-content; 
+        height: 100%; 
+        z-index: 999;
+    }
+
+    nav #mylink a{
+        border-bottom: 1px rgb(133, 133, 133) solid;
+    }
+
+    nav #mylink.show {
+        display: flex; /* แสดงเมนูเมื่อคลาส show ถูกเพิ่ม */
+        left: 0;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    .right_icon{
+        margin: 0;
+    }
+
+    .CartLogo{
+        margin-right: 5px;
+    }
+
+    .dropdown-content a {
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.8em; 
+    }  
+
+
 }
