@@ -12,11 +12,6 @@ body{                                   /* setup */
 }
 
 
-img{
-    width: 100%;
-    height: auto;
-}
-
 .icon{      /* navbar naja*/
     display: none;
 }
@@ -41,11 +36,6 @@ nav a{              /* navbar naja*/
     text-align: center;
     padding: 0px 20px;
     text-decoration: none;
-    font-size: 2em;
-}
-
-section h1 {
-    text-align: center;
     font-size: 2em;
 }
 
@@ -94,26 +84,8 @@ nav a:hover{        /* navbar naja*/
     height: auto;
 }
 
-.package{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-    
-}
-
-
-.image-radio{
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked + img {
-    border: 5px solid #F4CE14;
-    border-radius: 10px;
+.active{
+    color: #F4CE14;
 }
 
 .block3{
@@ -160,28 +132,29 @@ input[type="radio"]:checked + img {
     color: black;
 }
 
-.package img{
-    transition: 0.2s;
-}
-.package img:hover{
-    padding: 10%;
-    transition: 0.2s;
+h1{
+    text-align: center;
 }
 
-.buybutton{
-    border: none;
-    border-radius: 50px;
-    background-color: #F4CE14;
-    transition: 0.2s;
-    margin-left: 80% ;
+.block4{
+    background-color: white;
+    width: 70%;
+    height: auto;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
 }
 
-.buybutton:hover{
-    background-color: #c5a400;
-    transition: 0.2s;
+.result{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
 }
-
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -203,11 +176,6 @@ input[type="radio"]:checked + img {
         text-decoration: none;
         display: block;
         font-size: 1.2em; 
-    }
-
-    .buybutton{
-        font-size: 1em;
-        margin-left: 80%;
     }
 }
 
@@ -261,11 +229,5 @@ input[type="radio"]:checked + img {
         text-decoration: none;
         display: block;
         font-size: 0.8em; 
-    }  
-
-    .buybutton{
-        font-size: 0.8em;
-        padding: 5px;
-        margin-left: 70% ;
     }
 }
