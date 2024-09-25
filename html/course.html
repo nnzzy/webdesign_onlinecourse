@@ -39,31 +39,127 @@
     </nav>
     <br>
 
-    <a href="../" style="text-decoration: none;">
-        <button class="back-button">
-            <span class="arrow"> ← </span> ย้อนกลับ
-        </button>
-    </a>
 
     <br>
 
     <p class="breadcrumb"> <a href="..//index.html">หน้าหลัก</a> / <a href=""> คอร์สเรียน</a> </p>
 
+
+    <button class="filterbtn" id="filterbtn" onclick="toggleFilter()"><i class="fa fa-filter" aria-hidden="true"></i></button>
+
     <section class="block4">
+        <a href="../" style="text-decoration: none;">
+            <button class="back-button">
+                <span class="arrow"> ← </span> ย้อนกลับ
+            </button>
+        </a>
+
         <h1><b>คอร์สเรียน</b></h1>
-            <div class="result">
-                <h1>9 ผลลัพธ์</h1>
 
-                <div>
-                    <img src="../img/thai.png" alt="Thai Subject" width="200" height="200">
-                    <p>test</p>
-                    <a href="">เพิ่ม</a>
-                </div>
+        
+        <div class="filter" id="filter">
+            <form action="">
+                <input type="text" size="30">
+                <input type="submit" value="GO">
+            </form>
 
+            <br>
+            <h2><i class="fa fa-filter" aria-hidden="true"></i>ตัวกรอง</h2>
 
+            <br>
 
+            <h2>ระดับการศึกษา</h2>
+
+            <input type="checkbox" name="" id=""> <label for="">มัธยมต้น</label><br>
+            <input type="checkbox" name="" id=""> <label for="">มัธยมปลาย</label><br>
+
+            <br>
+
+            <h2>จุดประสงค์</h2>
+
+            <input type="checkbox" name="" id=""> <label for="">สอบเข้ามหาวิทยาลัย</label><br>
+            <input type="checkbox" name="" id=""> <label for="">ปรับพื้นฐาน</label><br>
+            <input type="checkbox" name="" id=""> <label for="">เนื้อหา</label><br>
+
+            <h2>วิชา</h2>
+
+            <input type="checkbox" name="" id=""> <label for="">คณิตศาสตร์</label><br>
+            <input type="checkbox" name="" id=""> <label for="">ภาษาอังกฤษ</label><br>
+            <input type="checkbox" name="" id=""> <label for="">ไทย</label><br>
+            <input type="checkbox" name="" id=""> <label for="">ฟิสิกส์</label><br>
+            <input type="checkbox" name="" id=""> <label for="">เคมี</label><br>
+            <input type="checkbox" name="" id=""> <label for="">ชีวะ</label><br>
+            <input type="checkbox" name="" id=""> <label for="">TGAT</label><br>
+            <input type="checkbox" name="" id=""> <label for="">TPAT</label><br>
+
+        </div>
+
+        <div class="result">
+            <div class="subject">
+                <img src="../img/thai.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
             </div>
+            <div class="subject">
+                <img src="../img/eng.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/physic.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/chemical.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/bio.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/math.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TGAT 1.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TGAT 2.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TGAT 3.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TPAT1.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TPAT3.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+            <div class="subject">
+                <img src="../img/TPAT4.png" alt="">
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>เพิ่ม</a>
+            </div>
+        </div>
+
 
     </section>
+
+
+
+    <script>
+        function toggleFilter() {
+        var filter = document.getElementById("filter");
+        if (filter.style.display === "none") {
+            filter.style.display = "block";
+        } else {
+            filter.style.display = "none";
+        }
+    }
+</script>
+    
 </body>
 </html>
