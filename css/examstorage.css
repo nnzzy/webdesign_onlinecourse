@@ -148,6 +148,7 @@ nav a:hover{        /* navbar naja*/
 
 .breadcrumb a{
     color: black;
+    font-size: 1.5em;
 }
 
 .block8{
@@ -295,4 +296,8 @@ nav a:hover{        /* navbar naja*/
     .block8 h1{
         font-size: 2em;
     }
+    .breadcrumb a{
+        font-size: 1em;
+    }
+
 }
