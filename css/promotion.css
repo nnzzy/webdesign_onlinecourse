@@ -132,6 +132,7 @@ nav a:hover{        /* navbar naja*/
 
 .breadcrumb a{
     color: black;
+    font-size: 1.5em;
 }
 
 .block6 h1{
@@ -302,5 +303,8 @@ nav a:hover{        /* navbar naja*/
         align-items: center; 
     }
 
-   
+
+    .breadcrumb a{
+        font-size: 1em;
+    }
 }

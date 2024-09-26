@@ -144,6 +144,7 @@ nav a:hover{        /* navbar naja*/
 }
 
 .breadcrumb a{
+    font-size: 1.5em;
     color: black;
 }
 .block7{
@@ -298,4 +299,7 @@ nav a:hover{        /* navbar naja*/
         font-size: 1em;
     }
 
+    .breadcrumb a{
+        font-size: 1em;
+    }
 }

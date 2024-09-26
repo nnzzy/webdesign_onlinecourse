@@ -75,6 +75,9 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
+.dropbtn{
+    color: #F4CE14;
+}
 
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
@@ -90,16 +93,30 @@ nav a:hover{        /* navbar naja*/
     width: 100%;
     height: auto;
 }
-
-.breadcrumb{
-    margin-left: 15%;
-}
-
-.breadcrumb a{
-    font-size: 1.5em;
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: bold;
     color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+
 }
 
+.back-button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.back-button .arrow {
+    margin-right: 10px;
+}
 .back-button {
     display: flex;
     align-items: center;
@@ -125,7 +142,17 @@ nav a:hover{        /* navbar naja*/
     margin-right: 10px;
 }
 
-.block5{
+.breadcrumb{
+    
+    margin-left: 15%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
+}
+
+.block9{
     background-color: white;
     width: 70%;
     height: auto;
@@ -136,55 +163,26 @@ nav a:hover{        /* navbar naja*/
     border-radius: 10px;
 }
 
-.block5 h1{
+.block9 h1{
     text-align: center;
     font-size: 4em;
 }
 
-.detailsubject{
-    justify-content: space-between;
-    display: flex;
+.exam{
     box-shadow: #404041 0px 0px 8px ;
-    padding: 5px;
     border-radius: 10px;
+    padding: 30px;
 }
 
-.detailsubject i{
-    margin-right: 5px;
-    color: #F4CE14;
-}
-
-.detailsubject h2{
-    text-align: center;
-}
-
-.detail{
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: #404041 0px 0px 8px ;
-}
-
-.unit{
+.nextbtn{
     display: flex;
-    justify-content: space-between;
-}
-
-.unit i{
-    margin-right: 5px;
-    color: #F4CE14;
-}
-
-.review{
-    font-size: 2em;
-    text-decoration: none;
+    width: fit-content;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F4CE14;
     color: black;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: #404041 0px 0px 8px ;
-}
-
-.review i{
-    color: #F4CE14;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1279px) {
@@ -208,12 +206,14 @@ nav a:hover{        /* navbar naja*/
         display: block;
         font-size: 1.2em; 
     }
-    .block5 h1{
+    .block9 h1{
         text-align: center;
         font-size: 3em;
     }
+    .exam h2{
+        font-size: 1.2em;
+    }
 }
-
 @media screen and (max-width: 768px) {
     nav .WebLogo{       /* navbar naja*/
         margin-left: auto;
@@ -264,26 +264,6 @@ nav a:hover{        /* navbar naja*/
         text-decoration: none;
         display: block;
         font-size: 0.8em; 
-    }
-
-    .unit h2{
-        font-size: 0.8em;
-    }
-
-    .detail h2{
-        font-size:1.2em;
-    }
-
-    .detailsubject h2{
-        font-size: 1em;
-    }
-
-    .review {
-        font-size: 1em;
-    }
-
-    .block5 h1{
-        font-size: 2em;
     }
     .dropdown-content {
         display: none ;

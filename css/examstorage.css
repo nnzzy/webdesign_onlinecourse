@@ -176,6 +176,7 @@ nav a:hover{        /* navbar naja*/
 .exam img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .exam a{

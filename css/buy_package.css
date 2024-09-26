@@ -157,6 +157,7 @@ input[type="radio"]:checked + img {
 }
 
 .breadcrumb a{
+    font-size: 1.5em;
     color: black;
 }
 
@@ -414,4 +415,8 @@ input[type="radio"]:checked + img {
         display: block;
     }
 
+
+    .breadcrumb a{
+        font-size: 1.5em;
+    }
 }
