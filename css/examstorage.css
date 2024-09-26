@@ -75,6 +75,9 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
+.dropbtn{
+    color: #F4CE14;
+}
 
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
@@ -146,7 +149,8 @@ nav a:hover{        /* navbar naja*/
 .breadcrumb a{
     color: black;
 }
-.block7{
+
+.block8{
     background-color: white;
     width: 70%;
     height: auto;
@@ -157,34 +161,31 @@ nav a:hover{        /* navbar naja*/
     border-radius: 10px;
 }
 
-.block7 h1{
+.block8 h1{
     text-align: center;
     font-size: 4em;
 }
 
-.contact, .contact2 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap; /* ทำให้รูปภาพเปลี่ยนแถวได้หากหน้าจอเล็กลง */
-    text-align: center;
+.exam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
 }
 
-
-.contact img, .contact2 img {
-    width: 80px; /* ตั้งค่าความกว้างที่เหมาะสมสำหรับรูปภาพ */
+.exam img {
+    width: 100%;
     height: auto;
 }
 
-.contact h2, .contact2 h2 {
-    font-size: 1.5em;
-    text-align: center;
+.exam a{
+    transition: 0.2s;
 }
 
-
+.exam a:hover{
+    transition: 0.2s;
+    border: #F4CE14 5px solid;
+}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -207,20 +208,18 @@ nav a:hover{        /* navbar naja*/
         display: block;
         font-size: 1.2em; 
     }
+    .exam {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        justify-items: center; 
+    }
+    .block8 h1{
+        font-size: 3em;
+    }
 
-    .contact img, .contact2 img {
-        width: 50px; 
-        height: auto;
-    }
-    
-    .contact h2, .contact2 h2 {
-        font-size: 1em;
-        text-align: center;
-    }
-    .block7 h1{
-        text-align: center;
-        font-size: 2em;
-    }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -285,17 +284,14 @@ nav a:hover{        /* navbar naja*/
     .dropdown-content.show {
         display: block;
     }
-    .contact, .contact2 {
-        flex-direction: column; 
+    .exam {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
         gap: 20px; 
-    }
-    .contact img, .contact2 img {
-        width: 40px; 
-        height: auto;
-    }
-    .block7 h1{
-        text-align: center;
-        font-size: 1em;
+        justify-items: center; 
     }
 
+    .block8 h1{
+        font-size: 2em;
+    }
 }
