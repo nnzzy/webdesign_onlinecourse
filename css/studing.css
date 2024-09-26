@@ -1,13 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+@font-face {
+    font-family: ProjectFont;
+    src: url(/font/DBHeaventCondv321.woff) format('woff2');
 }
 
-header {
-    padding: 20px;
+body{                                   /* setup */
+    margin: 0;
+    padding: 0;
+    font-family: ProjectFont !important;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.icon{      /* navbar naja*/
+    display: none;
+}
+
+nav{        /* navbar naja*/
+    width: 100%;
+    height: auto;
+    background-color: #45474b;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+nav .link {         /* navbar naja*/
+    display: flex;
+    align-items: center;
+}
+
+nav a{              /* navbar naja*/
+    float: left;
+    color: #ffffff;
     text-align: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+nav a:hover{        /* navbar naja*/
+    background-color: #404041;
+}
+
+.dropdown{          /* navbar naja*/
+    position: relative;
+}
+.dropdown-content{      /* navbar naja*/
+    display: none;
+    position: absolute;
+    background-color: #45474b;
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {       /* navbar naja*/
+    width: 100%;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em; 
+}
+
+.dropdown:hover .dropdown-content {     /* navbar naja*/
+    display: block;
+}
+
+.right_icon{                    /* navbar naja*/
+    margin-left: auto;
+}
+
+.right_icon img{                /* navbar naja*/
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.logoweb{               /* navbar naja*/
+    width: 100%;
+    height: auto;
+}
+
+.course-container header h1{
+    text-align: center;
+    font-weight: bold;
 }
 
 .back-button {
@@ -103,7 +185,7 @@ h4 {
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 
 li {
@@ -119,18 +201,90 @@ li:hover {
     background-color: #ddd;
 }
 
-.active{
+.active_a{
     background-color: #ffd700;
     border: thin solid black;
 }
 
 @media screen and (max-width: 1279px) {
+    nav a{              /* navbar naja*/
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+    nav img{            /* navbar naja*/
+        width: 50%;
+        height: auto;
+    }
+    .dropdown-content a {   /* navbar naja*/
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2em; 
+    }
+
     .course-container {
         width: 90%;
     }
 }
 
 @media screen and (max-width: 768px) {
+    nav .WebLogo{       /* navbar naja*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .UserLogo{          /* navbar naja*/
+        display: none;
+    }
+
+    nav #mylink {       /* navbar naja*/
+        display: none;
+        flex-direction: column;
+        background-color: #3d3d3d;
+        position: absolute;
+        top: 40px;
+        left: -250px; 
+        width: fit-content; 
+        height: 100%; 
+        z-index: 999;
+    }
+
+    nav #mylink a{      /* navbar naja*/
+        border-bottom: 1px rgb(133, 133, 133) solid;
+    }
+
+    nav #mylink.show {      /* navbar naja*/
+        display: flex;
+        left: 0;
+    }
+    
+    .icon {                 /* navbar naja*/
+        display: block;
+    }
+
+    .right_icon{            /* navbar naja*/
+        margin: 0;
+    }
+
+    .CartLogo{              /* navbar naja*/
+        margin-right: 5px;
+    }
+
+    .dropdown-content a {       /* navbar naja*/
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.8em; 
+    }
+    
     .course-container {
         flex-direction: column; /* ทำให้เนื้อหาเรียงตามแนวตั้ง */
         align-items: center; /* จัดให้อยู่ตรงกลาง */
