@@ -11,7 +11,6 @@ body{                                   /* setup */
     background-color: rgb(255, 255, 255) !important;
 }
 
-
 img{
     width: 100%;
     height: auto;
@@ -44,11 +43,6 @@ nav a{              /* navbar naja*/
     font-size: 2em;
 }
 
-section h1 {
-    text-align: center;
-    font-size: 2em;
-}
-
 nav a:hover{        /* navbar naja*/
     background-color: #404041;
 }
@@ -77,6 +71,9 @@ nav a:hover{        /* navbar naja*/
     display: block;
 }
 
+.active{
+    color: #F4CE14;
+}
 
 
 .right_icon{                    /* navbar naja*/
@@ -93,40 +90,30 @@ nav a:hover{        /* navbar naja*/
     width: 100%;
     height: auto;
 }
-
-.package{
-    justify-content: center;
-    align-items: center;
+.back-button {
     display: flex;
-    gap: 20px;
-    
-}
-
-
-.image-radio{
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked + img {
-    border: 5px solid #F4CE14;
-    border-radius: 10px;
-}
-
-.block3{
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: black;
     background-color: white;
-    width: 70%;
-    height: auto;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: #404041 0px 0px 8px ;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+
 }
 
+.back-button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.back-button .arrow {
+    margin-right: 10px;
+}
 .back-button {
     display: flex;
     align-items: center;
@@ -159,76 +146,16 @@ input[type="radio"]:checked + img {
 .breadcrumb a{
     color: black;
 }
-
-.package img{
-    transition: 0.2s;
+.block7{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
+    border-radius: 10px;
 }
-.package img:hover{
-    padding: 10%;
-    transition: 0.2s;
-}
-
-.buybutton{
-    border: none;
-    border-radius: 50px;
-    background-color: #F4CE14;
-    transition: 0.2s;
-    margin-left: 80% ;
-    padding: 10px;
-}
-
-.buybutton:hover{
-    background-color: #c5a400;
-    transition: 0.2s;
-}
-
-.step-progress {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.step {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.step-line {
-    width: 150px;
-    height: 4px;
-    background-color: #ddd;
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    z-index: 1;
-}
-
-.step-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left:50px;
-    background-color: #ddd;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    z-index: 2;
-    position: relative;
-}
-
-.step.active .step-circle {
-    background-color: #b0904e; 
-    color: white;
-}
-
-.step.active .step-line {
-    background: linear-gradient(to right, #c5a400 25%, #ddd 75%);
-}
-
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -250,58 +177,6 @@ input[type="radio"]:checked + img {
         text-decoration: none;
         display: block;
         font-size: 1.2em; 
-    }
-
-    .buybutton{
-        font-size: 1em;
-        margin-left: 80%;
-    }
-
-    .step-progress {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 20px 0;
-    }
-    
-    .step {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    
-    .step-line {
-        width: 100px;
-        height: 4px;
-        background-color: #ddd;
-        position: absolute;
-        top: 50%;
-        left: 0px;
-        z-index: 1;
-    }
-    
-    .step-circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-left:50px;
-        background-color: #ddd;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        z-index: 2;
-        position: relative;
-    }
-    
-    .step.active .step-circle {
-        background-color: #b0904e; 
-        color: white;
-    }
-    
-    .step.active .step-line {
-        background: linear-gradient(to right, #c5a400 25%, #ddd 75%);
     }
 }
 
@@ -355,52 +230,6 @@ input[type="radio"]:checked + img {
         text-decoration: none;
         display: block;
         font-size: 0.8em; 
-    }  
-
-    .buybutton{
-        font-size: 0.8em;
-        padding: 5px;
-        margin-left: 70% ;
-    }
-
-    .step {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-    
-    .step-line {
-        width: 60px;
-        height: 4px;
-        background-color: #ddd;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        z-index: 1;
-    }
-    
-    .step-circle {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin-left:50px;
-        background-color: #ddd;
-        color: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        z-index: 2;
-        position: relative;
-    }
-    
-    .step.active .step-circle {
-        background-color: #b0904e; 
-        color: white;
-    }
-    
-    .step.active .step-line {
-        background: linear-gradient(to right, #c5a400 25%, #ddd 75%);
     }
     .dropdown-content {
         display: none ;

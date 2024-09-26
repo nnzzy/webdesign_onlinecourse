@@ -281,6 +281,18 @@ nav a:hover{        /* navbar naja*/
         display: block;
         font-size: 0.8em; 
     }
+    .dropdown-content {
+        display: none ;
+        position: absolute;
+        background-color: #45474b;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+    }
+    
     .promotion1 img{
         width: 100%;
         height: auto;
@@ -289,4 +301,6 @@ nav a:hover{        /* navbar naja*/
         flex-direction: column; 
         align-items: center; 
     }
+
+   
 }

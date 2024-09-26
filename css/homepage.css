@@ -320,5 +320,17 @@ section h1{
         font-size: 0.8em; 
     }  
 
+    .dropdown-content {
+        display: none ;
+        position: absolute;
+        background-color: #45474b;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+    }
+
 
 }

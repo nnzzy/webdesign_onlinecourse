@@ -12,6 +12,15 @@
             var menu = document.getElementById("mylink");
             menu.classList.toggle("show");
         }
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+        
     </script>
     
 <body>
@@ -25,15 +34,15 @@
         <div id="mylink" class="link">
             <a href="./html/course.html">คอร์สเรียน</a>
             <div class="dropdown">
-                <a href="" class="dropbtn">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
-                    <div class="dropdown-content">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <div class="dropdown-content" id="dropdownMenu">
                         <a href="">คลังข้อสอบ</a>
                         <a href="">หนังสือเสริมความรู้</a>
                     </div>
             </div>
 
             <a href="./html/promotion.html">โปรโมชั่น</a>
-            <a href="">เกี่ยวกับเรา</a>
+            <a href="./html/aboutus.html">เกี่ยวกับเรา</a>
 
         </div>
 

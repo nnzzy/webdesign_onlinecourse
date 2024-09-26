@@ -12,6 +12,14 @@
             var menu = document.getElementById("mylink");
             menu.classList.toggle("show");
         }
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
     </script>
 </head>
 <body>
@@ -30,7 +38,7 @@
                     </div>
             </div>
             <a href="../html/promotion.html">โปรโมชั่น</a>
-            <a href="">เกี่ยวกับเรา</a>
+            <a href="../html/aboutus.html">เกี่ยวกับเรา</a>
         </div>
         <div class="right_icon">
             <a href="" class="CartLogo"><img src="..//img/cart1.png" alt="Cart Logo" width="30" height="30"></a>

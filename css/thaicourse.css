@@ -284,4 +284,16 @@ nav a:hover{        /* navbar naja*/
     .block5 h1{
         font-size: 2em;
     }
+    .dropdown-content {
+        display: none ;
+        position: absolute;
+        background-color: #45474b;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+    }
+
 }
