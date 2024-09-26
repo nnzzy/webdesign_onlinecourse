@@ -151,3 +151,109 @@ nav a:hover{        /* navbar naja*/
     font-size: 1.5em;
     color: black;
 }
+
+.block10{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
+    border-radius: 10px;
+}
+
+.block10 h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+@media screen and (max-width: 1279px) {
+    nav a{              /* navbar naja*/
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+    nav img{            /* navbar naja*/
+        width: 50%;
+        height: auto;
+    }
+    .dropdown-content a {   /* navbar naja*/
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2em; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .WebLogo{       /* navbar naja*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .UserLogo{          /* navbar naja*/
+        display: none;
+    }
+
+    nav #mylink {       /* navbar naja*/
+        display: none;
+        flex-direction: column;
+        background-color: #3d3d3d;
+        position: absolute;
+        top: 40px;
+        left: -250px; 
+        width: fit-content; 
+        height: 100%; 
+        z-index: 999;
+    }
+
+    nav #mylink a{      /* navbar naja*/
+        border-bottom: 1px rgb(133, 133, 133) solid;
+    }
+
+    nav #mylink.show {      /* navbar naja*/
+        display: flex;
+        left: 0;
+    }
+    
+    .icon {                 /* navbar naja*/
+        display: block;
+    }
+
+    .right_icon{            /* navbar naja*/
+        margin: 0;
+    }
+
+    .CartLogo{              /* navbar naja*/
+        margin-right: 5px;
+    }
+
+    .dropdown-content a {       /* navbar naja*/
+        width: 100%;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 0.8em; 
+    }
+    .dropdown-content {
+        display: none ;
+        position: absolute;
+        background-color: #45474b;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+    }
+    .breadcrumb a{
+        font-size: 1em;
+    }
+}
