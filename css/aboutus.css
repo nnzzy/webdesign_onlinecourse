@@ -157,6 +157,35 @@ nav a:hover{        /* navbar naja*/
     border-radius: 10px;
 }
 
+.block7 h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+.contact, .contact2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap; /* ทำให้รูปภาพเปลี่ยนแถวได้หากหน้าจอเล็กลง */
+    text-align: center;
+}
+
+
+.contact img, .contact2 img {
+    width: 80px; /* ตั้งค่าความกว้างที่เหมาะสมสำหรับรูปภาพ */
+    height: auto;
+}
+
+.contact h2, .contact2 h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
         float: left;
@@ -177,6 +206,20 @@ nav a:hover{        /* navbar naja*/
         text-decoration: none;
         display: block;
         font-size: 1.2em; 
+    }
+
+    .contact img, .contact2 img {
+        width: 50px; /* ตั้งค่าความกว้างที่เหมาะสมสำหรับรูปภาพ */
+        height: auto;
+    }
+    
+    .contact h2, .contact2 h2 {
+        font-size: 1em;
+        text-align: center;
+    }
+    .block7 h1{
+        text-align: center;
+        font-size: 2em;
     }
 }
 
@@ -241,6 +284,18 @@ nav a:hover{        /* navbar naja*/
     
     .dropdown-content.show {
         display: block;
+    }
+    .contact, .contact2 {
+        flex-direction: column; /* เปลี่ยนการจัดเรียงเป็นแนวตั้ง */
+        gap: 20px; /* เพิ่มช่องว่างระหว่างแต่ละไอเท็ม */
+    }
+    .contact img, .contact2 img {
+        width: 40px; /* ตั้งค่าความกว้างที่เหมาะสมสำหรับรูปภาพ */
+        height: auto;
+    }
+    .block7 h1{
+        text-align: center;
+        font-size: 1em;
     }
 
 }
