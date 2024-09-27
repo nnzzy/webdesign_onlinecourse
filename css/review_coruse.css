@@ -12,6 +12,15 @@ body{                                   /* setup */
     background-color: rgb(255, 255, 255) !important;
 }
 
+.breadcrumb{
+    margin-left: 16%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
+}
+
 img{
     width: 100%;
     height: auto;
@@ -261,6 +270,10 @@ h1 {
         font-size: 1.2em; 
     }
 
+    .breadcrumb{
+        margin-left: 5%;
+    }
+
     .review-container {
         width: 90%; 
     }
@@ -330,6 +343,8 @@ h1 {
         display: block;
         font-size: 0.8em; 
     }
+
+    
 
     .review-container {
         width: 90%; 
