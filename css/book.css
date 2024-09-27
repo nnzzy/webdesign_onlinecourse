@@ -168,6 +168,60 @@ nav a:hover{        /* navbar naja*/
     font-size: 4em;
 }
 
+.allbook{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+}
+
+.allbook a{
+    text-decoration: none;
+    color: black;
+}
+
+.allbook img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn .try{
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #F4CE14;
+    width: 100%;
+    color: #F4CE14;
+    
+}
+
+.btn .add{
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+    background-color: #F4CE14;
+    width: 100%;
+    color: #000000;
+}
+
+.add:hover{
+    background-color: #c5a400;
+    transition: 0.2s;
+}
+
+.try:hover{
+    background-color: #e7e7e7;
+    transition: 0.2s;
+    border-color: black;
+    color: #000000;
+}
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
         float: left;
@@ -188,6 +242,27 @@ nav a:hover{        /* navbar naja*/
         text-decoration: none;
         display: block;
         font-size: 1.2em; 
+    }
+    .btn .try{
+        font-size: 1em;
+        padding: 4px;
+        text-align: center;
+        border: 1px solid #F4CE14;
+        width: 100%;
+        color: #F4CE14;
+        
+    }
+    
+    .btn .add{
+        font-size: 1em;
+        padding: 4px;
+        text-align: center;
+        background-color: #F4CE14;
+        width: 100%;
+        color: #000000;
+    }
+    .block10 h1{
+        font-size: 3em;
     }
 }
 
@@ -255,5 +330,34 @@ nav a:hover{        /* navbar naja*/
     }
     .breadcrumb a{
         font-size: 1em;
+    }
+    .block10 h1{
+        font-size: 2em;
+    }
+    
+    .btn .try{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+        padding: 3px;
+        text-align: center;
+        border: 1px solid #F4CE14;
+        width: 100%;
+        color: #F4CE14;
+        
+    }
+    
+    .btn .add{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+        padding: 3px;
+        text-align: center;
+        background-color: #F4CE14;
+        width: 100%;
+        color: #000000;
+        margin-top: 2px;
     }
 }
