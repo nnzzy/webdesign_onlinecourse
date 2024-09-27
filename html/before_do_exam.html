@@ -20,6 +20,15 @@
                 dropdown.style.display = "none";
             }
         }
+
+        function toggleDropdown2() {
+            var dropdown = document.getElementById("dropdownMenu1");
+            if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
     </script>
 </head>
 <body>
@@ -32,14 +41,27 @@
             
         <div id="mylink" class="link">
             <a href="../html/login.html">หน้าหลัก</a>
-            <a href="../html/my_course.html">คอร์สเรียนของฉัน</a>
-            <a href="../html/mockexam.html" class="active">จำลองการสอบ</a>
-
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <a href="my_course.html">คอร์สเรียนของฉัน</a>
+                        <a href="course.html">ซื้อคอร์สเรียนเพิ่มเติม</a>
+                        <a href="buy_package.html">ซื้อแพ็คเกจเพิ่มเติม</a>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                    <div class="dropdown-content" id="dropdownMenu1">
+                        <a href="examstorage.html">คลังข้อสอบ</a>
+                        <a href="book.html">หนังสือเสริมความรู้</a>
+                    </div>
+                </div>
+            <a href="../html/mockexam.html" style="color: #F4CE14;">จำลองการสอบ</a>
         </div>
 
         <div class="right_icon">
             <a href="" class="CartLogo"><img src="../img/cart1.png" alt="Cart Logo" width="30" height="30"></a>
-            <a href="" class="UserLogo"><img src="../img/user1.png" alt="User Logo" ></a>
+            <a href="edit_profile.html" class="UserLogo"><img src="../img/user1.png" alt="User Logo" ></a>
         </div>
         
     </nav>
@@ -48,7 +70,7 @@
     <p class="breadcrumb"> <a href="..//index.html">หน้าหลัก / </a><a href="mockexam.html"> จำลองการสอบ / </a><a href="before_do_exam.html">วิชาภาษาคณิตศาสตร์</a> </p>
 
     <div class="containera">
-        <a href="" style="text-decoration: none;"></a>
+        <a href="mockexam.html" style="text-decoration: none;">
             <button class="back-button">
                 <span class="arrow"> ← </span> ย้อนกลับ
             </button>

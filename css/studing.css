@@ -206,6 +206,15 @@ li:hover {
     border: thin solid black;
 }
 
+.breadcrumb{
+    margin-left: 15%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
+}
+
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
         float: left;
@@ -230,6 +239,10 @@ li:hover {
 
     .course-container {
         width: 90%;
+    }
+
+    .breadcrumb{
+        margin-left: 5%;
     }
 }
 
@@ -274,6 +287,10 @@ li:hover {
 
     .CartLogo{              /* navbar naja*/
         margin-right: 5px;
+    }
+
+    .breadcrumb{
+        margin-left: 10%;
     }
 
     .dropdown-content a {       /* navbar naja*/

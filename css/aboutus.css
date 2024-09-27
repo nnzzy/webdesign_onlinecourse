@@ -71,7 +71,7 @@ nav a:hover{        /* navbar naja*/
     display: block;
 }
 
-.active{
+.dropdown.active{
     color: #F4CE14;
 }
 
