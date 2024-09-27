@@ -5,10 +5,20 @@
 
 body{                                   /* setup */
     margin: 0;
+    padding: 0;
     font-family: ProjectFont !important;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255) !important;
+}
+
+.breadcrumb{
+    margin-left: 15%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
 }
 
 img{
@@ -71,8 +81,6 @@ nav a:hover{        /* navbar naja*/
     display: block;
 }
 
-
-
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
 }
@@ -92,14 +100,6 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
-.breadcrumb{
-    margin-left: 15%;
-}
-
-.breadcrumb a{
-    font-size: 1.5em;
-    color: black;
-}
 
 .back-button {
     display: flex;
@@ -112,11 +112,6 @@ nav a:hover{        /* navbar naja*/
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    width: fit-content;
-}
-
-a {
-    text-decoration: none;
 }
 
 .back-button:hover {
@@ -128,116 +123,86 @@ a {
     margin-right: 10px;
 }
 
-h2 {
-    margin-left: 10%;
-    margin-bottom: 20px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.course-container{
+.containera {
     width: 100%;
     max-width: 1034px;
     margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* จัดข้อความอยู่ตรงกลาง */
 }
 
-.course-info {
-    text-align: center;
+h1 {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.course-stat {
-    width: 80%;
-    display: flex;
-    justify-content: center; 
-    gap: 120px;
-    margin: 10px auto;
-    border: thin solid black;
-    border-radius: 10px;
-    padding: 1%;
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.quiz-info p {
+    margin: 5px 0;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-.stat-item img{
-    width: 30%;
-    height: auto;
+.summary {
+    margin-top: 20px;
 }
 
-tbody img{
-    width: 9%;
-    margin-right: 5%;
+.summary h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 
-.rating-button {
-    margin-right: 10%;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border: thin solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    float: right;
-}
-
-.rating-button:hover {
-    background-color: #d1d1d1;
-}
-
-.course-details {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.course-table {
-    width: 100%;
-    max-width: 800px;
+table {
+    width: 70%;
     border-collapse: collapse;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
-.course-table th, .course-table td {
+table th, table td {
     padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #0000002c;
+    text-align: center;
 }
 
-.course-table input[type="checkbox"] {
-    transform: scale(1.5);
-    cursor: pointer;
+table th {
+    background-color: #F4CE14;
+    color: rgb(0, 0, 0);
 }
 
-.study:hover{
-    box-shadow: 0 0 12px 0 rgb(171, 171, 171); 
+.feedback {
+    margin-top: 20px;
 }
 
-.review{
-    color: #000;
-    margin-right: 25px;
-    background-color: #ffffff;
+.feedback a{
+   text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.buttons button {
     padding: 10px 20px;
-    border: thin solid black;
-    border-radius: 5px;
+    background-color: #F4CE14;
+    border: none;
     cursor: pointer;
-    font-size: 16px;
-    float: right;
+    font-size: 14px;
+    border-radius: 10px;
 }
 
-.review i{
-    color: #F4CE14;
-}
-
-.review:hover{
-    background-color: #d1d1d1;
+button:hover {
+    background-color: #e5b700;
 }
 
 @media screen and (max-width: 1279px) {
@@ -249,12 +214,10 @@ tbody img{
         text-decoration: none;
         font-size: 1.4em;
     }
-
     nav img{            /* navbar naja*/
         width: 50%;
         height: auto;
     }
-
     .dropdown-content a {   /* navbar naja*/
         width: 100%;
         color: white;
@@ -268,48 +231,10 @@ tbody img{
         margin-left: 5%;
     }
 
-    .course-container {
+    .containera{
         width: 90%;
     }
-    .course-details {
-        display: block; 
-    }
 
-    h2{
-        margin-left: 5%;
-    }
-
-    .rating-button {
-        margin: 10px 10% 10px 0px;
-        display: block; 
-    }
-
-    .review{
-        margin: 10px 25px;
-    }
-
-    .course-table th, .course-table td {
-        padding: 5px; 
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 22px; 
-        text-align: center;
-    }
-
-    .stat-item img{
-        width: 25%;
-        height: auto;
-    }
-
-    img{
-        width: 10%;
-    }
-
-    .stat-item {
-        font-size: small;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -363,60 +288,9 @@ tbody img{
         display: block;
         font-size: 0.8em; 
     }
-    
-    .course-stat {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
 
-    .stat-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .rating-button {
-        margin-right: 0;
-    }
-
-    .course-details {
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .course-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-
-    .course-table th, .course-table td {
-        padding: 10px;
-        text-align: left;
-    }
-
-    .back-button {
-        margin-left: 10px; 
-    }
-
-    h1 {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    h2{
-        margin-left: 1%;
-    }
-
-    .course-stat {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    table {
         width: 100%;
     }
+
 }
