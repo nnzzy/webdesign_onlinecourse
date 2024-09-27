@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รีวิวคอร์สเรียน</title>
-    <link rel="stylesheet" href="..//css/review_coruse.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//css/buy_package.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script>    <!--  script menu mobile -->
@@ -44,9 +44,9 @@
             <div class="dropdown">
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()" style="color: #F4CE14;">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu">
-                        <a href="my_course.html" style="color: #F4CE14;">คอร์สที่เรียนของฉัน</a>
+                        <a href="my_course.html">คอร์สเรียนของฉัน</a>
                         <a href="course_login.html">ซื้อคอร์สเรียนเพิ่มเติม</a>
-                        <a href="buy_package_login.html">ซื้อแพ็คเกจเพิ่มเติม</a>
+                        <a href="buy_package_login.html" style="color: #F4CE14;">ซื้อแพ็คเกจเพิ่มเติม</a>
                     </div>
             </div>
             <div class="dropdown">
@@ -67,60 +67,69 @@
     </nav>
     <br>
 
-    <p class="breadcrumb"> <a href="..//html/login.html">หน้าหลัก / </a><a href="my_course.html"> คอร์สเรียนของฉัน / </a><a href="review_course.html">รีวิวคอร์สเรียน</a> </p>
+    <br>
 
-    <div class="review-container">
-        <a href="select_lesson.html">
+    <p class="breadcrumb"> <a href="..//html/login.html">หน้าหลัก/</a><a href="./buy_package_login.html"> เลือกซื้อแพ็คเกจ</a> </p>
+
+    <section class="block3">
+        <a href="../html/login.html" style="text-decoration: none;">
             <button class="back-button">
                 <span class="arrow"> ← </span> ย้อนกลับ
             </button>
-            </a>  
-            <header>
-                <h1>รีวิวคอร์สเรียน</h1>
-            </header>
-        <div class="course-review">
-            <div class="course-info">
-                <img src="..//img/thaibook.png" alt="คณิต" class="course-image">
-                <div class="course-details">
-                    <h3>รายละเอียด</h3>
-                    <p>หนังสือ "สรุปเนื้อหาภาษาไทย" เหมาะสำหรับผู้เรียนที่ต้องการทบทวนความรู้สรุปเนื้อหาภาษาไทยอย่างรวดเร็ว</p>
+        </a>
+        <h1 class="header"><b>เลือกซื้อแพ็คเกจ</b</h1><br>
+            <div class="step-progress">
+                <div class="step active">
+                    <div class="step-line"></div>
+                    <div class="step-circle">1</div>
+                </div>
+            
+                <div class="step">
+                    <div class="step-line"></div>
+                    <div class="step-circle">2</div>
+                </div>
+            
+                <div class="step">
+                    <div class="step-line"></div>
+                    <div class="step-circle">3</div>
+                </div>
+            
+                <div class="step">
+                    <div class="step-line"></div>
+                    <div class="step-circle">4</div>
                 </div>
             </div>
-            <div class="reviews">
-                <div class="review_c">
-                    <p>2  <br> รีวิว</p>
-                </div>
-                <div class="rating">
-                    <p>5.0<span class="small-gray">/5</span></p>
-                    <div class="stars">
-                        ★★★★★
-                    </div>
-                </div>
-                <div class="review-list">
-                    <div class="review">
-                        <img src="..//img/tung.png" alt="นายตั้ง" class="user-photo">
-                        <div class="review-content">
-                            <p>นายตั้ง ***</p>
-                            <div class="stars">
-                                ★★★★★
-                            </div>
-                            <p>สอบเข้าใจง่ายมากครับ เนื้อหาครบสุดๆ</p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <img src="..//img/sud.png" alt="นายสุด" class="user-photo">
-                        <div class="review-content">
-                            <p>นายสุด ****</p>
-                            <div class="stars">
-                                ★★★★★
-                            </div>
-                            <p>คุ้มค่ากับเงินที่เสียไปครับ เนื้อหาละเอียดมาก</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
+        <form action="">
+            <div class="package">
+                <label class="image-radio">
+                    <input type="radio" name="image" id="image1" value="package 1 Months">
+                    <img src="..//img/1month.png" alt="package 1 Months" class="onemonth">
+                </label>
+
+                <label class="image-radio">
+                    <input type="radio" name="image" id="image2" value="package 3 Months">
+                    <img src="..//img/3month.png" alt="package 3 Months" class="threemonth">
+                </label>
+
+                <label class="image-radio">
+                    <input type="radio" name="image" id="image3" value="package 6 Months">
+                    <img src="..//img/6month.png" alt="package 6 Months" class="sixmonth">
+                </label>
+            </div>
+
+            <br>
+            <input type="submit" value="ซื้อแพ็คเกจ" class="buybutton">
+        </form>
+        
+        <br>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

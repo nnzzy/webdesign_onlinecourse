@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เขียนรีวิวคอร์สเรียน</title>
-    <link rel="stylesheet" href="..//css/before_do_exam.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//css/examdetail.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>    <!--  script menu mobile -->
         function toggleMenu(){
             var menu = document.getElementById("mylink");
@@ -42,7 +42,7 @@
         <div id="mylink" class="link">
             <a href="../html/login.html">หน้าหลัก</a>
             <div class="dropdown">
-                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()" style="color: white;">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu">
                         <a href="my_course.html">คอร์สเรียนของฉัน</a>
                         <a href="course_login.html">ซื้อคอร์สเรียนเพิ่มเติม</a>
@@ -50,13 +50,13 @@
                     </div>
             </div>
             <div class="dropdown">
-                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()" style="color: #F4CE14;">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu1">
-                        <a href="examstorage_login.html">คลังข้อสอบ</a>
+                        <a href="examstorage_login.html" style="color: #F4CE14;">คลังข้อสอบ</a>
                         <a href="book_login.html">หนังสือเสริมความรู้</a>
                     </div>
                 </div>
-            <a href="../html/mockexam.html" style="color: #F4CE14;">จำลองการสอบ</a>
+            <a href="../html/mockexam.html">จำลองการสอบ</a>
         </div>
 
         <div class="right_icon">
@@ -66,55 +66,55 @@
         
     </nav>
     <br>
+
     <br>
+    <p class="breadcrumb"> <a href="../index.html">หน้าหลัก/</a>  <a href="./examstorage.html"> คลังข้อสอบ/</a>  <a href="./examdetail.html">TGAT1</a></p>
 
-    <p class="breadcrumb"> <a href="..//html/login.html">หน้าหลัก / </a><a href="mockexam.html"> จำลองการสอบ / </a><a href="before_do_exam.html">วิชาภาษาคณิตศาสตร์</a> </p>
-
-    <div class="containera">
-        <a href="mockexam.html" style="text-decoration: none;">
+    <section class="block9">
+        <a href="../html/examstorage_login.html" style="text-decoration: none;">
             <button class="back-button">
                 <span class="arrow"> ← </span> ย้อนกลับ
             </button>
         </a>
-        <h1>วิชาภาษาคณิตศาสตร์</h1>
-        
-        <div class="quiz-info">
-            <p>เวลาในการทำข้อสอบ : 30 นาที</p>
-            <p>จำนวน 10 ข้อ</p>
+
+    <h1><b>ข้อสอบ TGAT1</b></h1>
+
+    <div class="exam">
+        <h2><b>Part One : Expressions (Items 1-15)</b</h2>
+        <h2><b>Choose the best answer</b></h2><br>
+        <h2><b>A good deal</b></h2>
+        <h2>A : Have you found a new apartment yet?</h2>
+        <h2>B : Yeah. I finally found a cheaper place. Only $700 a month,all bills included. Plus, it's a two bedroom.</h2>
+        <h2>A : Wow, that's a good deal. __________ (1) _________?</h2>
+        <h2>B : Yeah, but I still want a bigger fridge. I wanna get a cheap one,but I haven't seen anything within my budget yet.</h2>
+        <h2>A : You know what? __________ (2) __________until you find one.</h2>
+        <h2>B : Really? Thanks. I appreciate it.</h2>
+        <br>
+        <div class="choice">
+            <h2>1:</h2>
+            <p>A. Did you buy it</p>
+            <p>B. Are you kidding</p>
+            <p>C. Is it really cheap</p>
+            <p>D. Is it serious</p>
+            <p>E. Is it furnished</p>
+        </div>
+        <div class="choice">
+            <h2>2:</h2>
+            <p>A. You don't need one</p>
+            <p>B. You don't have to cook</p>
+            <p>C. I've an extra one you can use</p>
+            <p>D. You need to get a brand new one</p>
+            <p>E. I can stay with you</p>
         </div>
 
-        <div class="summary">
-            <h3>ประวัติในการทำข้อสอบ</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>จำนวนครั้ง</th>
-                        <th>สถานะ</th>
-                        <th>คะแนน / 10.00</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>เสร็จสิ้น</td>
-                        <td>10 / 10.00</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>เสร็จสิ้น</td>
-                        <td>8 / 10.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-        <div class="feedback">
-            <a href="doexam.html">
-                <div class="buttons">
-                    <button>เริ่มทำข้อสอบ</button>
-                </div>
-            </a>    
-        </div>
+        <a href="#" class="nextbtn">หน้าต่อไป</a>
     </div>
+
+    
+    
+
+    </section>
+    
 </body>
 </html>
