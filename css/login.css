@@ -12,6 +12,10 @@ body{                                   /* setup */
     background-color: rgb(255, 255, 255) !important;
 }
 
+.active{
+    color: #F4CE14;
+}
+
 img{
     width: 100%;
     height: auto;
@@ -130,6 +134,11 @@ nav a:hover{        /* navbar naja*/
     text-decoration: none;
     color: black;
     font-size: 18px;
+}
+
+.edit-btn:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .news-card {
