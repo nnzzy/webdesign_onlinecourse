@@ -92,13 +92,14 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
-.breadcrumb{
-    margin-left: 15%;
-}
-
-.breadcrumb a{
-    font-size: 1.5em;
-    color: black;
+.block3{
+    background-color: white;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
 }
 
 .back-button {
@@ -112,133 +113,87 @@ nav a:hover{        /* navbar naja*/
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    width: fit-content;
+    font-size: 1em;
+
 }
 
-a {
-    text-decoration: none;
-}
-
-.back-button:hover {
+.back-button:hover{
     background-color: black;
     color: white;
+
 }
 
 .back-button .arrow {
     margin-right: 10px;
 }
 
-h2 {
-    margin-left: 10%;
-    margin-bottom: 20px;
+.breadcrumb{
+    margin-left: 15%;
 }
 
-h1 {
+.breadcrumb a{
+    color: black;
+    font-size: 1.5em;
+}
+
+h1{
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.course-container{
-    width: 100%;
-    max-width: 1034px;
-    margin: 40px auto;
 }
 
-.course-info {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.course-stat {
-    width: 80%;
-    display: flex;
-    justify-content: center; 
-    gap: 120px;
-    margin: 10px auto;
-    border: thin solid black;
-    border-radius: 10px;
-    padding: 1%;
-}
-
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.stat-item img{
-    width: 30%;
+.block4{
+    display: flex;    
+    background-color: white;
+    width: 70%;
     height: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
+    flex-wrap: wrap;
+    border-radius: 10px;
 }
 
-tbody img{
-    width: 9%;
-    margin-right: 5%;
+.block4 h1 {
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.rating-button {
-    margin-right: 10%;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border: thin solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    float: right;
+.result{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: #404041 0px 0px 8px ;
+    border-radius: 10px;
 }
 
-.rating-button:hover {
-    background-color: #d1d1d1;
-}
-
-.course-details {
+.result .course-card {
+    display: flexbox;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.course-table {
+.course-card:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.course-card img{
     width: 100%;
-    max-width: 800px;
-    border-collapse: collapse;
-    margin: 10px auto;
+    height: auto;
+    border-radius: 10px;
 }
 
-.course-table th, .course-table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.course-table input[type="checkbox"] {
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
-.study:hover{
-    box-shadow: 0 0 12px 0 rgb(171, 171, 171); 
-}
-
-.review{
-    color: #000;
-    margin-right: 25px;
-    background-color: #ffffff;
-    padding: 10px 20px;
-    border: thin solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    float: right;
-}
-
-.review i{
-    color: #F4CE14;
-}
-
-.review:hover{
-    background-color: #d1d1d1;
-}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -249,12 +204,10 @@ tbody img{
         text-decoration: none;
         font-size: 1.4em;
     }
-
     nav img{            /* navbar naja*/
         width: 50%;
         height: auto;
     }
-
     .dropdown-content a {   /* navbar naja*/
         width: 100%;
         color: white;
@@ -264,51 +217,22 @@ tbody img{
         font-size: 1.2em; 
     }
 
-    .breadcrumb{
-        margin-left: 5%;
+    .course-card {
+        width: 90%; /* ลดขนาดการ์ดให้เล็กลง */
+        margin: 10px auto; /* จัดให้อยู่กลางหน้าจอ */
+        padding: 15px; /* ลด padding */
     }
 
-    .course-container {
-        width: 90%;
-    }
-    .course-details {
-        display: block; 
-    }
-
-    h2{
-        margin-left: 5%;
-    }
-
-    .rating-button {
-        margin: 10px 10% 10px 0px;
-        display: block; 
-    }
-
-    .review{
-        margin: 10px 25px;
-    }
-
-    .course-table th, .course-table td {
-        padding: 5px; 
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 22px; 
-        text-align: center;
-    }
-
-    .stat-item img{
-        width: 25%;
+    .course-card img {
+        width: 80%; /* ลดขนาดของรูปในการ์ด */
         height: auto;
     }
 
-    img{
-        width: 10%;
-    }
 
-    .stat-item {
-        font-size: small;
+    .result{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
@@ -363,60 +287,44 @@ tbody img{
         display: block;
         font-size: 0.8em; 
     }
-    
-    .course-stat {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
 
-    .stat-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .rating-button {
-        margin-right: 0;
-    }
-
-    .course-details {
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .course-table {
+    .result{
         width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
     }
 
-    .course-table th, .course-table td {
-        padding: 10px;
-        text-align: left;
+    .result{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
-    .back-button {
-        margin-left: 10px; 
+    .course-card {
+        width: 80%; 
+        margin-bottom: 20px; 
     }
 
-    h1 {
+    .course-card h4 {
+        font-size: 26px;
+    }
+
+    .course-card p {
         font-size: 20px;
-        text-align: center;
-        margin-bottom: 10px;
+    }
+    
+    .dropdown-content {
+        display: none ;
+        position: absolute;
+        background-color: #45474b;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    .dropdown-content.show {
+        display: block;
     }
 
-    h2{
-        margin-left: 1%;
+    .breadcrumb a{
+        font-size: 1em;
     }
 
-    .course-stat {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
 }
