@@ -152,6 +152,7 @@ h1{
     flex-wrap: wrap;
     border-radius: 10px;
 }
+
 .block4 h1 {
     font-size: 4em;
     width: 100%;
@@ -159,10 +160,6 @@ h1{
     margin-bottom: 20px;
 }
 
-.result img{
-    width: 30%;
-    height: auto;
-}
 .result{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,53 +173,27 @@ h1{
     box-shadow: #404041 0px 0px 8px ;
     border-radius: 10px;
 }
-.result img {
-    width: 100%;
-    height: auto;
-}
 
-.filter {   
-    width: 25%;
-    height: auto;
-}
-
-.filer input{
-    width: 50%;
-}
-
-.filter label{
-    font-size: 1.5em;
-}
-
-.result .subject {
+.result .course-card {
+    display: flexbox;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-.result .subject a{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
-    color: #F4CE14;
-    text-decoration: none;
-    padding: 10px;
-    width: 90%;
-    font-size: 2em;
-    border: 1px solid #F4CE14;
-    border-radius: 10px;
-    transition: 0.2s;
-}
-.result .subject a:hover{
-    background-color: #c5a400;
-    color: white;
-    transition: 0.2s;
-}
-.result .subject a i{
-    margin-right: 10px;
+
+.course-card:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-#filterbtn {
-    display: none;
+.course-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
+
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -246,27 +217,23 @@ h1{
         font-size: 1.2em; 
     }
 
-    .filter input[type="text"] {
-        width: 50%; 
+    .course-card {
+        width: 90%; /* ลดขนาดการ์ดให้เล็กลง */
+        margin: 10px auto; /* จัดให้อยู่กลางหน้าจอ */
+        padding: 15px; /* ลด padding */
     }
 
-    .result .subject a{
-        width: 90%;
-        font-size: 1.5em;
+    .course-card img {
+        width: 80%; /* ลดขนาดของรูปในการ์ด */
+        height: auto;
     }
-    
-    .filter label{
-        font-size: 1.1em;
-    }
+
 
     .result{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-}
-#filterbtn {
-    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -321,15 +288,6 @@ h1{
         font-size: 0.8em; 
     }
 
-    .result .subject a{
-        width: 90%;
-        font-size: 1em;
-    }
-
-    .filter{
-        display: none;
-    }
-
     .result{
         width: 100%;
     }
@@ -339,28 +297,20 @@ h1{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-    #filterbtn {
-        display: block;
-        margin-left: 80%;
-        margin-bottom: 5%;
+
+    .course-card {
+        width: 80%; 
+        margin-bottom: 20px; 
     }
 
-    .filter input[type="text"] {
-        width: 90%; 
+    .course-card h4 {
+        font-size: 26px;
     }
 
-    .filter {
-        display: flex; 
-        width: 100%; 
+    .course-card p {
+        font-size: 20px;
     }
-
-    .filter label{
-        font-size: 1.5em;
-    }
-
-    .filter h2{
-        font-size: 2em;
-    }
+    
     .dropdown-content {
         display: none ;
         position: absolute;
