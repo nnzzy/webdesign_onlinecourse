@@ -75,7 +75,6 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
-
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
 }
@@ -90,16 +89,30 @@ nav a:hover{        /* navbar naja*/
     width: 100%;
     height: auto;
 }
-
-.breadcrumb{
-    margin-left: 15%;
-}
-
-.breadcrumb a{
-    font-size: 1.5em;
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: bold;
     color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+
 }
 
+.back-button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.back-button .arrow {
+    margin-right: 10px;
+}
 .back-button {
     display: flex;
     align-items: center;
@@ -125,7 +138,16 @@ nav a:hover{        /* navbar naja*/
     margin-right: 10px;
 }
 
-.block5{
+.breadcrumb{
+    
+    margin-left: 15%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
+}
+.block13{
     background-color: white;
     width: 70%;
     height: auto;
@@ -136,56 +158,93 @@ nav a:hover{        /* navbar naja*/
     border-radius: 10px;
 }
 
-.block5 h1{
-    text-align: center;
-    font-size: 4em;
+.item{
+    margin-top: 5px;
 }
-
-.detailsubject{
-    justify-content: space-between;
-    display: flex;
-    box-shadow: #404041 0px 0px 8px ;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.detailsubject i{
-    margin-right: 5px;
-    color: #F4CE14;
-}
-
-.detailsubject h2{
-    text-align: center;
-}
-
-.detail{
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: #404041 0px 0px 8px ;
-}
-
-.unit{
+.address {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.unit i{
-    margin-right: 5px;
-    color: #F4CE14;
-}
 
-.review{
+.address .change a{
+    color: black;
     font-size: 2em;
+}
+.item2 {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+.item2 img {
+    width: 10%;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-end;    
+    margin-left: auto;        
+}
+
+.amountandprice {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 40px;                 
+}
+
+.countdetails {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 40px;                 
+}
+
+.choice{
+    display: flex;
+    gap: 20px;
+}
+
+.choice label{
+    font-size: 1.5em;
+}
+
+
+.resultprice{
+    display: flex;
+}
+.resultprice h2{
+    margin-left: auto;
+}
+
+.buycontainer{
+    display: flex;
+}
+.buybtn{
+    border-radius: 10px;
+    font-size: 2em;
+    margin-left: auto;
     text-decoration: none;
     color: black;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: #404041 0px 0px 8px ;
+    background-color: #F4CE14;
+    padding: 10px;
 }
 
-.review i{
-    color: #F4CE14;
+.buybtn:hover{
+    transition: 0.2s;
+    background-color: #c5a400;
 }
+.address .name h2{
+    font-size: 1.8em;
+}
+
+.address .addr h2{
+    font-size: 1.8em;
+}
+.address .change a{
+    font-size: 1.8em;
+}
+
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -208,12 +267,35 @@ nav a:hover{        /* navbar naja*/
         display: block;
         font-size: 1.2em; 
     }
-    .block5 h1{
-        text-align: center;
-        font-size: 3em;
-    }
-}
 
+    .detail h1{
+        font-size: 1em;
+    }
+    .choice label{
+        font-size: 1.2em;
+    }
+
+    .address .name h2{
+        font-size: 1em;
+    }
+
+    .address .addr h2{
+        font-size: 1em;
+    }
+    .address .change a{
+        font-size: 1em;
+    }
+    .item2 h2{
+        font-size: 1.2em;
+    }
+    .resultprice h2{
+        font-size: 1em;
+    }
+    .buycontainer a{
+        font-size: 1.2em;
+    }
+
+}
 @media screen and (max-width: 768px) {
     nav .WebLogo{       /* navbar naja*/
         margin-left: auto;
@@ -255,6 +337,7 @@ nav a:hover{        /* navbar naja*/
 
     .CartLogo{              /* navbar naja*/
         margin-right: 5px;
+        color: #F4CE14;
     }
 
     .dropdown-content a {       /* navbar naja*/
@@ -264,26 +347,6 @@ nav a:hover{        /* navbar naja*/
         text-decoration: none;
         display: block;
         font-size: 0.8em; 
-    }
-
-    .unit h2{
-        font-size: 0.8em;
-    }
-
-    .detail h2{
-        font-size:1.2em;
-    }
-
-    .detailsubject h2{
-        font-size: 1em;
-    }
-
-    .review {
-        font-size: 1em;
-    }
-
-    .block5 h1{
-        font-size: 2em;
     }
     .dropdown-content {
         display: none ;
@@ -297,12 +360,46 @@ nav a:hover{        /* navbar naja*/
         display: block;
     }
     .breadcrumb a{
-        font-size: 1em;
+        font-size: 0.8em;
     }
-
-    .block5{
+    .block13{
         width: 100%;
         box-shadow: 0px 0px 0px 0px;
     }
+    .detail h1{
+        font-size: 1em;
+    }
+    .selectchoice h2{
+        font-size: 1em;
+    }
+    .choice label{
+        font-size: 1em;
+    }
+
+    .address .name h2{
+        font-size: 0.8em;
+    }
+
+    .address .addr h2{
+        font-size: 0.8em;
+    }
+    .address .change a{
+        font-size: 0.8em;
+    }
+    .item2 h2{
+        font-size: 0.8em;
+    }
+    .resultprice h2{
+        font-size: 0.8em;
+    }
+    .buycontainer a{
+        font-size: 1em;
+    }
+
+.back-button {
+    padding: 2px 5px;
+    font-size: 0.6em;
+
+}
 
 }

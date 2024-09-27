@@ -299,5 +299,8 @@ nav a:hover{        /* navbar naja*/
     .breadcrumb a{
         font-size: 1em;
     }
-
+    .block8{
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px;
+    }
 }
