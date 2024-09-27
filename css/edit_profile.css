@@ -91,8 +91,9 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
-header {
+header h2{
     padding: 20px;
+    font-size: 36px;
 }
 
 .back-button {
@@ -142,6 +143,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.profile-picture p{
+    font-size: 20px;
+}
+
 .profile-img {
     width: 150px;
     height: 150px;
@@ -169,13 +174,13 @@ h2 {
 }
 
 .form-group.full-width {
-    width: 79%;
+    width: 78%;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .form-group input {
