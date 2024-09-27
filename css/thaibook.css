@@ -151,8 +151,7 @@ nav a:hover{        /* navbar naja*/
     font-size: 1.5em;
     color: black;
 }
-
-.block10{
+.block11{
     background-color: white;
     width: 70%;
     height: auto;
@@ -163,53 +162,41 @@ nav a:hover{        /* navbar naja*/
     border-radius: 10px;
 }
 
-.block10 h1{
-    text-align: center;
-    font-size: 4em;
+.photobook{
+    margin-top: 10px;
+    width: 40%;
 }
 
-.allbook{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    justify-items: center; 
-}
-
-.allbook a{
-    text-decoration: none;
-    color: black;
-}
-
-.allbook img{
-    width: 100%;
-    height: auto;
+.photobook img{
     border-radius: 10px;
 }
+
 
 .btn{
     margin-top: 5px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    width: fit-content;
 }
 
 .btn .try{
     font-size: 1.5em;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border: 1px solid #F4CE14;
     width: 100%;
     color: #F4CE14;
+    text-decoration: none;
     
 }
 
 .btn .add{
     font-size: 1.5em;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #F4CE14;
     width: 100%;
     color: #000000;
+    text-decoration: none;
 }
 
 .add:hover{
@@ -223,11 +210,24 @@ nav a:hover{        /* navbar naja*/
     border-color: black;
     color: #000000;
 }
-
-.allbook img:hover{
-    border :#F4CE14 3px solid;
-    transition: 0.2s;
+.result {
+    display: flex; 
 }
+
+.detail {
+    margin-left: 15px;
+    height: 100%;
+}
+.detail .btn{
+    margin-top: 30%;
+    padding: 0;
+
+}
+
+.detail h2{
+    font-size: 3em;
+}
+
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -252,24 +252,22 @@ nav a:hover{        /* navbar naja*/
     }
     .btn .try{
         font-size: 1em;
-        padding: 4px;
-        text-align: center;
-        border: 1px solid #F4CE14;
-        width: 100%;
-        color: #F4CE14;
         
     }
     
     .btn .add{
         font-size: 1em;
-        padding: 4px;
-        text-align: center;
-        background-color: #F4CE14;
-        width: 100%;
-        color: #000000;
     }
-    .block10 h1{
-        font-size: 3em;
+    .detail h2{
+    font-size: 1.5em;
+    }
+    .detail .btn{
+        margin-top: 10%;
+        padding: 0;
+    }
+
+    .des h2{
+        font-size: 1em;
     }
 }
 
@@ -338,33 +336,39 @@ nav a:hover{        /* navbar naja*/
     .breadcrumb a{
         font-size: 1em;
     }
-    .block10 h1{
-        font-size: 2em;
+    .result {
+        display: block;
+        text-align: left;
     }
-    
     .btn .try{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.6em;
-        padding: 3px;
-        text-align: center;
-        border: 1px solid #F4CE14;
-        width: 100%;
-        color: #F4CE14;
-        
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .detail{
+        margin-left: 0;
     }
     
-    .btn .add{
+    .detail .btn {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.6em;
-        padding: 3px;
-        text-align: center;
-        background-color: #F4CE14;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        color: #000000;
-        margin-top: 2px;
+        gap: 20px;
+    }
+    .btn .add{
+        font-size: 1em;
+        padding: 10px;
+    }
+    .photobook {
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .des{
+        margin-top: 15px;
+    }
+    .des h2{
+        font-size: 1em;
     }
 }
