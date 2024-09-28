@@ -298,6 +298,9 @@ footer{                 /* FOOTER KUB */
 .loginbutton{
     display: none;
 }
+.logoutbutton{
+    display: none;
+}
 
 
 @media screen and (max-width: 1279px) {
