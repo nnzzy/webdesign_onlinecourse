@@ -92,6 +92,7 @@ nav a:hover{        /* navbar naja*/
 
 .back-button {
     display: flex;
+    width: fit-content;
     align-items: center;
     padding: 5px 10px;
     font-weight: bold;
@@ -255,6 +256,11 @@ footer{                 /* FOOTER KUB */
 .logoutbutton{
     display: none;
 }
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
         float: left;
@@ -283,6 +289,10 @@ footer{                 /* FOOTER KUB */
 
     .question-nav {
         justify-items: center;
+    }
+    footer{
+        position: fixed;
+        bottom: 0px;
     }
 }
 

@@ -58,11 +58,12 @@ h2 {
 }
 
 .input-row .input-group {
-    width: 48%; /* ปรับขนาดของ input-row ให้ครึ่งหนึ่งของความกว้าง */
+    width: 100%; /* ปรับขนาดของ input-row ให้ครึ่งหนึ่งของความกว้าง */
 }
 
 .submit-btn {
     font-family: ProjectFont !important;
+    display: flex;
     width: 100%;
     padding: 12px;
     background-color: #ffcc00;
@@ -71,6 +72,14 @@ h2 {
     color: white;
     font-size: 30px;
     cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    
 }
 
 .submit-btn:hover {

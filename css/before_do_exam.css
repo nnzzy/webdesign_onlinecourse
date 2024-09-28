@@ -103,6 +103,7 @@ nav a:hover{        /* navbar naja*/
 
 .back-button {
     display: flex;
+    width: fit-content;
     align-items: center;
     padding: 5px 10px;
     font-weight: bold;
@@ -192,13 +193,15 @@ table th {
     justify-content: center;
 }
 
-.buttons button {
+.buttons a {
     padding: 10px 20px;
     background-color: #F4CE14;
     border: none;
     cursor: pointer;
     font-size: 14px;
     border-radius: 10px;
+    color: white;
+    font-size: 1em;
 }
 
 button:hover {
@@ -373,10 +376,6 @@ footer{                 /* FOOTER KUB */
     }
     .iconfooter a i{    /* FOOTER KUB */
         font-size: small;
-    }
-    footer{
-        position: fixed;
-        bottom: 0px;
     }
     .logoutbutton{
         display: block;

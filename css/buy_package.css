@@ -139,6 +139,7 @@ input[type="radio"]:checked + img {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     font-size: 1em;
+    width: fit-content;
 
 }
 
@@ -171,11 +172,12 @@ input[type="radio"]:checked + img {
 
 .buybutton{
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: #F4CE14;
     transition: 0.2s;
     margin-left: 80% ;
     padding: 10px;
+    font-size: 2em;
 }
 
 .buybutton:hover{
@@ -306,7 +308,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .buybutton{
-        font-size: 1em;
+        font-size: 1.8em;
         margin-left: 80%;
     }
 
@@ -355,6 +357,11 @@ footer{                 /* FOOTER KUB */
     
     .step.active .step-line {
         background: linear-gradient(to right, #c5a400 25%, #ddd 75%);
+    }
+    footer{
+        width: 100%;
+        position: relative;
+        bottom: 0px;
     }
 }
 
@@ -411,7 +418,7 @@ footer{                 /* FOOTER KUB */
     }  
 
     .buybutton{
-        font-size: 0.8em;
+        font-size: 1.5em;
         padding: 5px;
         margin-left: 70% ;
     }
@@ -505,11 +512,13 @@ footer{                 /* FOOTER KUB */
     .iconfooter a i{    /* FOOTER KUB */
         font-size: small;
     }
-    footer{
-        position: fixed;
-        bottom: 0px;
-    }
+
     .logoutbutton{
         display: block;
+    }
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
     }
 }

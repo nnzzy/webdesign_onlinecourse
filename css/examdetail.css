@@ -95,6 +95,7 @@ nav a:hover{        /* navbar naja*/
 }
 .back-button {
     display: flex;
+    width: fit-content;
     align-items: center;
     padding: 5px 10px;
     font-weight: bold;
@@ -119,6 +120,7 @@ nav a:hover{        /* navbar naja*/
 }
 .back-button {
     display: flex;
+    width: fit-content;
     align-items: center;
     padding: 5px 10px;
     font-weight: bold;
@@ -174,6 +176,7 @@ nav a:hover{        /* navbar naja*/
     padding: 30px;
 }
 
+
 .nextbtn{
     display: flex;
     width: fit-content;
@@ -183,6 +186,7 @@ nav a:hover{        /* navbar naja*/
     background-color: #F4CE14;
     color: black;
     text-decoration: none;
+    font-size: 2em;
 }
 footer{                 /* FOOTER KUB */
     display: flex;
@@ -240,6 +244,9 @@ footer{                 /* FOOTER KUB */
 .logoutbutton{
     display: none;
 }
+.exam .choice p{
+    font-size: 2em;
+}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -269,6 +276,13 @@ footer{                 /* FOOTER KUB */
     .exam h2{
         font-size: 1.2em;
     }
+    .exam .choice p{
+        font-size: 1.5em;
+    }
+    .nextbtn{
+        font-size: 1.5em;
+    }
+
 }
 @media screen and (max-width: 768px) {
     nav .WebLogo{       /* navbar naja*/
@@ -374,6 +388,10 @@ footer{                 /* FOOTER KUB */
 
     .logoutbutton{
         display:block;
+    }
+
+    .exam .choice p{
+        font-size: 1em;
     }
 
 }

@@ -95,6 +95,7 @@ nav a:hover{        /* navbar naja*/
 }
 .back-button {
     display: flex;
+    width: fit-content;
     align-items: center;
     padding: 5px 10px;
     font-weight: bold;
