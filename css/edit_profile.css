@@ -194,8 +194,11 @@ h2 {
 .form-bottom {
     width: 100%;
     display: flex;
-    justify-content: flex-end; 
+    gap: 20px; 
+    margin-top: 10%;
+    margin-left: 19%;
 }
+
 
 .submit-btn {
     background-color: #ffd700;
@@ -203,13 +206,24 @@ h2 {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
+    margin-left: 42%;
 }
 
 .submit-btn:hover {
     background-color: #e5b700;
 }
+
+.logout {
+    background-color: #ff0000;
+    color: #fdfdfd;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 footer{                 /* FOOTER KUB */
     display: flex;
     background-color: #45474b;
