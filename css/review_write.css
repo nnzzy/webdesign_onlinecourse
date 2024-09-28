@@ -227,6 +227,56 @@ h1 {
 .submit-review:hover {
     background-color: #e5b700;
 }
+footer{                 /* FOOTER KUB */
+    display: flex;
+    background-color: #45474b;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+}
+
+.imagefooter{               /* FOOTER KUB */
+    display: flex;
+    margin-left: auto;
+    width: 20%;
+    height: auto;
+}
+
+.phoneimage, .emailimage {      /* FOOTER KUB */
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.phone, .email {            /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+.text1 img{             /* FOOTER KUB */
+    width: 5%;
+}
+.phone{                 /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+
+.email{                 /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+.iconfooter{            /* FOOTER KUB */
+    text-align: right;
+}
+.iconfooter a{          /* FOOTER KUB */
+    color: white;
+}
+.iconfooter a i{        /* FOOTER KUB */
+    font-size: x-large;
+    margin-right: 10px;
+}
+.iconfooter a i:hover{      /* FOOTER KUB */
+    color: #F4CE14;
+}
 
 
 @media screen and (max-width: 1279px) {
@@ -360,5 +410,34 @@ h1 {
 
     .submit-review{
         margin-right: 3%;
+    }
+    .phoneimage, .emailimage {  /* FOOTER KUB */
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .phoneimage img , .emailimage img{  /* FOOTER KUB */
+        width: 5%;
+        height: auto;
+    }
+
+    .text1 h2{  /* FOOTER KUB */
+        font-size: 1em;
+    }
+    .phoneimage h2{ /* FOOTER KUB */
+        font-size: 1em;
+    }
+    .emailimage h2{ /* FOOTER KUB */
+        font-size: 1em;
+    }
+
+    .contactfooter h2{  /* FOOTER KUB */
+        margin-top: auto;
+        font-size: 0.8em;
+    }
+    .iconfooter a i{    /* FOOTER KUB */
+        font-size: small;
     }
 }
