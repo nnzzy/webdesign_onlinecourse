@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มลงทะเบียน</title>
+    <link rel="stylesheet" href="..//css/register.css">
+    <!-- Font Awesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ลงทะเบียน</h2>
+        <form action="register2.html" method="post">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="firstname">ชื่อ</label>
+                    <input type="text" id="firstname" placeholder="ชื่อ">
+                </div>
+                <div class="input-group">
+                    <label for="lastname">นามสกุล</label>
+                    <input type="text" id="lastname" placeholder="นามสกุล">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="dob">วันเดือนปีเกิด</label>
+                <i class="fas fa-calendar-alt calendar-icon" id="calendar-icon"></i>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <i class="fas fa-phone-alt"></i>
+                <input type="text" id="phone" placeholder="เบอร์โทรศัพท์">
+            </div>
+
+            <div class="input-group">
+                <label for="password">รหัสผ่าน</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="รหัสผ่าน">
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" id="confirm-password" placeholder="ยืนยันรหัสผ่าน">
+            </div>
+
+        </form>
+        <a href="register2.html"><button type="submit" class="submit-btn">ถัดไป</button></a>
+    </div>
+</body>
+</html>

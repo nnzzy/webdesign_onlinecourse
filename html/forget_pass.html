@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลืมรหัสผ่าน</title>
+    <link rel="stylesheet" href="..//css/forget_pass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ลืมรหัสผ่าน</h2>
+        <p class="pls">ขอรับรหัสผ่านชั่วคราว</p>
+        <form action="/submit" method="post">
+
+            <div class="input-group">
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <i class="fas fa-phone-alt"></i>
+                <input type="text" id="phone" placeholder="เบอร์โทรศัพท์" required oninput="checkPhoneInput()">
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="otp-send">ส่งรหัสOTP</label>
+                    <button type="button" id="otp-send" class="otp-btn" disabled>ส่งรหัสOTP</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="otp-confirm">ยืนยันOTP</label>
+                    <input type="text" id="otp-confirm" placeholder="ยืนยันOTP" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">ถัดไป</button>
+        </form>
+    </div>
+
+    <script>
+        function checkPhoneInput() {
+            const phoneInput = document.getElementById('phone').value;
+            const otpButton = document.getElementById('otp-send');
+            if (phoneInput.trim() !== '') {
+                otpButton.disabled = false;
+            } else {
+                otpButton.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
