@@ -234,6 +234,12 @@ footer{                 /* FOOTER KUB */
 .iconfooter a i:hover{      /* FOOTER KUB */
     color: #F4CE14;
 }
+.loginbutton{
+    display: none;
+}
+.logoutbutton{
+    display: none;
+}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -329,6 +335,10 @@ footer{                 /* FOOTER KUB */
     .breadcrumb a{
         font-size: 1em;
     }
+    .block9{
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px;
+    }
     .phoneimage, .emailimage {  /* FOOTER KUB */
         display: flex;
         width: 100%;
@@ -357,6 +367,13 @@ footer{                 /* FOOTER KUB */
     }
     .iconfooter a i{    /* FOOTER KUB */
         font-size: small;
+    }
+    .loginbutton{
+        display: block;
+    }
+
+    .logoutbutton{
+        display:block;
     }
 
 }

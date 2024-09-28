@@ -91,7 +91,7 @@ nav a:hover{        /* navbar naja*/
     color: #F4CE14;
 }
 
-h2{
+.recommended-exams h2{
     text-align: center;
 }
 
@@ -116,7 +116,6 @@ h2{
     width: 328px;
     height: auto;
     border-radius: 50%;
-       
 }
 
 .like{
@@ -180,6 +179,60 @@ h2{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
+footer{                 /* FOOTER KUB */
+    display: flex;
+    background-color: #45474b;
+    justify-content: space-around;
+    color: white;
+    padding: 20px;
+}
+
+.imagefooter{               /* FOOTER KUB */
+    display: flex;
+    margin-left: auto;
+    width: 20%;
+    height: auto;
+}
+
+.phoneimage, .emailimage {      /* FOOTER KUB */
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.phone, .email {            /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+.text1 img{             /* FOOTER KUB */
+    width: 5%;
+}
+.phone{                 /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+
+.email{                 /* FOOTER KUB */
+    display: flex;
+    align-items: center;
+}
+.iconfooter{            /* FOOTER KUB */
+    text-align: right;
+}
+.iconfooter a{          /* FOOTER KUB */
+    color: white;
+}
+.iconfooter a i{        /* FOOTER KUB */
+    font-size: x-large;
+    margin-right: 10px;
+}
+.iconfooter a i:hover{      /* FOOTER KUB */
+    color: #F4CE14;
+}
+
+.logoutbutton{
+    display: none;
+}
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
         float: left;
@@ -218,6 +271,7 @@ h2{
         margin-bottom: 20px;
         width: 160px; 
     }
+}
 
 @media screen and (max-width: 768px) {
     nav .WebLogo{       /* navbar naja*/
@@ -299,7 +353,7 @@ h2{
             max-width: 300px; /* ตั้งค่าความกว้างสูงสุด */
             margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
         }
-    }
+    
     .phoneimage, .emailimage {  /* FOOTER KUB */
         display: flex;
         width: 100%;
@@ -329,5 +383,8 @@ h2{
     .iconfooter a i{    /* FOOTER KUB */
         font-size: small;
     }
-
+    
+    .logoutbutton{
+        display: block;
+    }
 }

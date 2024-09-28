@@ -278,6 +278,12 @@ footer{                 /* FOOTER KUB */
 .iconfooter a i:hover{      /* FOOTER KUB */
     color: #F4CE14;
 }
+.loginbutton{
+    display: none;
+}
+.logoutbutton{
+    display: none;
+}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -455,5 +461,11 @@ footer{                 /* FOOTER KUB */
     }
     .iconfooter a i{    /* FOOTER KUB */
         font-size: small;
+    }
+    .loginbutton{
+        display: block;
+    }
+    .logoutbutton{
+        display: block;
     }
 }

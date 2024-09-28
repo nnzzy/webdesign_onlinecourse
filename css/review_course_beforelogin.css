@@ -5,10 +5,20 @@
 
 body{                                   /* setup */
     margin: 0;
+    padding: 0;
     font-family: ProjectFont !important;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255) !important;
+}
+
+.breadcrumb{
+    margin-left: 16%;
+}
+
+.breadcrumb a{
+    font-size: 1.5em;
+    color: black;
 }
 
 img{
@@ -71,11 +81,6 @@ nav a:hover{        /* navbar naja*/
     display: block;
 }
 
-.active{
-    color: #F4CE14;
-}
-
-
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
 }
@@ -90,6 +95,11 @@ nav a:hover{        /* navbar naja*/
     width: 100%;
     height: auto;
 }
+
+.active{
+    color: #F4CE14;
+}
+
 .back-button {
     display: flex;
     align-items: center;
@@ -101,102 +111,141 @@ nav a:hover{        /* navbar naja*/
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 1em;
-
 }
 
-.back-button:hover{
+.back-button:hover {
     background-color: black;
     color: white;
-
 }
 
 .back-button .arrow {
     margin-right: 10px;
 }
 
-.block6{
-    background-color: white;
-    width: 70%;
-    height: auto;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: #404041 0px 0px 8px ;
+.review-container {
+    width: 100%;
+    max-width: 1034px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumb{
-    margin-left: 15%;
+.review-container a{
+    text-decoration: none;
 }
 
-.breadcrumb a{
-    color: black;
-    font-size: 1.5em;
-}
-
-.block6 h1{
+h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.promotion1{
+.course-review {
     display: flex;
-    box-shadow: #404041 0px 0px 8px ;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #000000;
     padding: 20px;
     border-radius: 10px;
-    margin-top: 2%;
+    margin-top: 40px;
 }
-.promotion1 img{
-    width: 30%;
-    height: auto;
+
+.small-gray {
+    color: #888; 
+    font-size: 26px; 
 }
-.promotion-detail{
+
+.course-info {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; 
+    align-items: center;
+    width: 30%;
 }
 
-.promotion-detail h2{
-    font-size: 3em;
+.course-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: thin solid black;
 }
 
-.promotion-detail ul li{
-    display: inline-block;
-    font-size: 2em;
-    margin-right: 20px;
+.course-details h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-.codebtn{
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+.course-details p {
+    text-align: center;
+    font-size: 26px;
+    color: #555;
+}
+
+.reviews {
     width: 60%;
-    font-size: 2em;
-    background-color: #F4CE14;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
 }
 
-.codebtn:hover{
-    background-color: #c5a400;
-    transition: 0.2s;
-}
-.review{
-    font-size: 2em;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 15px;
+.review_c{
+    float: right;
+    border: thin solid black;
+    width: 160px;
+    height: 80px;
+    text-align: center;
     border-radius: 10px;
-    box-shadow: #404041 0px 0px 8px ;
 }
 
-.review i{
-    color: #F4CE14;
+.review_c p{
+    font-size: 26px;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating p {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-list p{
+    font-size: 30px;
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.review-content p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-content p:last-child {
+    color: #555;
 }
 footer{                 /* FOOTER KUB */
     display: flex;
@@ -273,26 +322,22 @@ footer{                 /* FOOTER KUB */
         display: block;
         font-size: 1.2em; 
     }
-    .block6 h1{
-        font-size: 2em;
+
+    .breadcrumb{
+        margin-left: 5%;
     }
 
-    .promotion-detail h2{
-        font-size: 1.5em;
+    .review-container {
+        width: 90%; 
     }
 
-    .promotion-detail ul li{
-        display: inline-block;
-        font-size: 1.2em;
-        margin-right: 20px;
+    .course-info {
+        width: 300px;
     }
-    .codebtn{
-        width: 40%;
-        font-size: 1em;
-    }
-    .promotion1 img{
-        width: 40%;
-        height: auto;
+
+    .course-details p {
+        text-align: center;
+        color: #555;
     }
 }
 
@@ -326,6 +371,10 @@ footer{                 /* FOOTER KUB */
         display: flex;
         left: 0;
     }
+
+    .review-list p{
+        font-size: 20px;
+    }
     
     .icon {                 /* navbar naja*/
         display: block;
@@ -347,35 +396,47 @@ footer{                 /* FOOTER KUB */
         display: block;
         font-size: 0.8em; 
     }
-    .dropdown-content {
-        display: none ;
-        position: absolute;
-        background-color: #45474b;
-        z-index: 1;
-        top: 100%;
-    }
+
     
-    .dropdown-content.show {
-        display: block;
+
+    .review-container {
+        width: 90%; 
+        padding: 10px;
     }
-    
-    .promotion1 img{
+
+    .course-image {
+        width: 120px; 
+    }
+
+    .course-review {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .course-info, .reviews {
         width: 100%;
+    }
+
+    .review-content{
+        width: 250px;
+    }
+
+    .user-photo {
+        margin-bottom: 10px;
+    }
+
+    .rating p {
+        font-size: 38px;
+    }
+
+    .review_c{
+        width: 80px;
         height: auto;
     }
-    .promotion1 {
-        flex-direction: column; 
-        align-items: center; 
-    }
 
-
-    .breadcrumb a{
-        font-size: 1em;
-    }
-    
-    .block6{
-        width: 100%;
-        box-shadow: 0px 0px 0px 0px;
+    .review_c p{
+        margin: 0;
+        font-size: 20px;
     }
     .phoneimage, .emailimage {  /* FOOTER KUB */
         display: flex;
@@ -407,7 +468,7 @@ footer{                 /* FOOTER KUB */
         font-size: small;
     }
     .loginbutton{
-        display: block;
+        display:block;
     }
-
 }
+
