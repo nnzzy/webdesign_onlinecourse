@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มลงทะเบียน</title>
+    <link rel="stylesheet" href="..//css/register2.css"> <!-- ใช้ CSS จากหน้าเมื่อกี้ -->
+</head>
+<body>
+    <div class="container">
+        <h2>ลงทะเบียน</h2>
+        <form action="/submit" method="post">
+            <div class="input-group">
+                <label for="address">ที่อยู่</label>
+                <textarea id="address" rows="3" placeholder="เช่น 385/49 ถ.มิตรภาพ ต.ในเมือง อ.เมือง จ.ขอนแก่น 40000"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="school">สถานศึกษา</label>
+                <input type="text" id="school" placeholder="โรงเรียน...">
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="education-level">ระดับการศึกษา</label>
+                    <select id="education-level">
+                        <option value="">-- เลือกระดับการศึกษา --</option>
+                        <option value="primary">ประถมศึกษา</option>
+                        <option value="secondary">มัธยมศึกษา</option>
+                        <option value="university">อุดมศึกษา</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="year">ชั้นปี</label>
+                    <select id="year">
+                        <option value="">-- เลือกชั้นปี --</option>
+                        <option value="1">ปี 1</option>
+                        <option value="2">ปี 2</option>
+                        <option value="3">ปี 3</option>
+                        <option value="4">ปี 4</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <a href="login_page.html"><button type="submit" class="submit-btn">ยืนยัน</button></a>
+    </div>
+
+
+</body>
+</html>
