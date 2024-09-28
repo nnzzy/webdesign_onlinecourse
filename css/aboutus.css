@@ -244,6 +244,9 @@ footer{
     position: fixed;
     bottom: 0px;
 }
+.logoutbutton{
+    display: none;
+}
 
 @media screen and (max-width: 1279px) {
     nav a{              /* navbar naja*/
@@ -398,6 +401,9 @@ footer{
         font-size: small;
     }
     .loginbutton{
+        display: block;
+    }
+    .logoutbutton{
         display: block;
     }
 

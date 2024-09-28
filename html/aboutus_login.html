@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="..//css/book.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>    <!--  script menu mobile -->
@@ -14,15 +14,6 @@
         }
         function toggleDropdown() {
             var dropdown = document.getElementById("dropdownMenu");
-            if (dropdown.style.display === "none" || dropdown.style.display === "") {
-                dropdown.style.display = "block";
-            } else {
-                dropdown.style.display = "none";
-            }
-        }
-
-        function toggleDropdown2() {
-            var dropdown = document.getElementById("dropdownMenu1");
             if (dropdown.style.display === "none" || dropdown.style.display === "") {
                 dropdown.style.display = "block";
             } else {
@@ -40,7 +31,7 @@
             <a href="../html/login.html" class="WebLogo"><img src="../img/logo41.png" alt="Logo Web Site"></a>
             
         <div id="mylink" class="link">
-            <a href="../html/login.html">หน้าหลัก</a>
+            <a href="../html/login.html" style="color: #F4CE14;">หน้าหลัก</a>
             <div class="dropdown">
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu">
@@ -50,10 +41,10 @@
                     </div>
             </div>
             <div class="dropdown">
-                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()" style="color: #F4CE14;">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu1">
                         <a href="examstorage_login.html">คลังข้อสอบ</a>
-                        <a href="book_login.html" style="color: #F4CE14;">หนังสือเสริมความรู้</a>
+                        <a href="book_login.html">หนังสือเสริมความรู้</a>
                     </div>
                 </div>
             <a href="../html/mockexam.html">จำลองการสอบ</a>
@@ -65,66 +56,64 @@
             <a href="cart_login.html" class="CartLogo"><img src="../img/cart1.png" alt="Cart Logo" width="30" height="30"></a>
             <a href="edit_profile.html" class="UserLogo"><img src="../img/user1.png" alt="User Logo" ></a>
         </div>
-    </nav>
-    <br>
+</nav>
 
-    <br>
+<br>
 
-    <p class="breadcrumb"> <a href="../html/login.html">หน้าหลัก/</a>  <a href="./book_login.html"> หนังสือเสริมความรู้</a></p>
+    <p class="breadcrumb"> <a href="../index.html">หน้าหลัก/ </a><a href="./aboutus.html"> เกี่ยวกับเรา</a></p>
 
-    <section class="block10">
-        <a href="../html/login.html" style="text-decoration: none;" class="back-button">
+    <section class="block7">
+        <a href="../" style="text-decoration: none;" class="back-button">
                 <span class="arrow"> ← </span> ย้อนกลับ
         </a>
-        <h1><b>หนังสือเสริมความรู้</b></h1>
 
-    <div class="allbook">
-        <div class="book">
-            <a href="../html/thaibook_login.html"><img src="../img/thaibook.png" alt="ThaiBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="./cart.html" class="add">เพิ่มลงรถเข็น</a>
+        <h1><b>ช่องทางติดต่อ</b></h1>
+
+        <div class="contact">
+            <div class="Line">
+                <div class="detail">
+                    <img src="../img/line.png" alt="Logo Line">
+                    <h2>@smartclass</h2>
+                </div>
             </div>
-        </div>
-        <div class="book">
-            <a href="#"><img src="../img/engbook.png" alt="EngBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="#" class="add">เพิ่มลงรถเข็น</a>
+
+            <div class="Phone"> 
+                <div class="detail">
+                    <img src="../img/phone-call.png" alt="Phone Logo">
+                    <h2>094-224-4174</h2>
+                </div>
             </div>
+
         </div>
-        <div class="book">
-            <a href="#"><img src="../img/mathbook.png" alt="MathBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="#" class="add">เพิ่มลงรถเข็น</a>
+
+        <h1><b>ช่องทางติดตาม</b></h1>
+        <div class="contact2">
+            <div class="Youtube">
+                <div class="detail">
+                    <img src="../img/youtube.png" alt="Youtube Logo">
+                    <h2>smartclassTV</h2>
+                </div>
             </div>
-        </div>
-        <div class="book">
-            <a href="#"><img src="../img/physicbook.png" alt="PhysicBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="#" class="add">เพิ่มลงรถเข็น</a>
+
+            <div class="ig">
+                <div class="detail">
+                    <img src="../img/instagram.png" alt="IG Logo">
+                    <h2>smart_class</h2>
+                </div>
             </div>
-        </div>
-        <div class="book">
-            <a href="#"><img src="../img/chemicalbook.png" alt="ChemicalBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="#" class="add">เพิ่มลงรถเข็น</a>
+
+            <div class="facebook">
+                <div class="detail">
+                    <img src="../img/facebook.png" alt="Facebook Logo">
+                    <h2>smartclassOfficial</h2>
+                </div>
             </div>
+
         </div>
-        <div class="book">
-            <a href="#"><img src="../img/biobook.png" alt="BioBook"></a>
-            <div class="btn">
-                <a href="#" class="try">ทดลองอ่าน</a>
-                <a href="#" class="add">เพิ่มลงรถเข็น</a>
-            </div>
-        </div>
-    </div>
 
     </section>
     <br>
+    
     <footer>
         <div class="text1">
             <h2>บริษัท สมาร์ทคลาส จำกัด</h2>
@@ -155,5 +144,6 @@
             <h2>Copyright &copy; 2024 Smart Class Co., Ltd. All rights reserved</h2>
         </div>
     </footer>
+
 </body>
 </html>
