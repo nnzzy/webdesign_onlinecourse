@@ -484,10 +484,7 @@ footer{                 /* FOOTER KUB */
 .iconfooter a i{    /* FOOTER KUB */
     font-size: small;
 }
-footer{
-    position: fixed;
-    bottom: 0px;
-}
+
 .loginbutton{
     display: block;
 }
