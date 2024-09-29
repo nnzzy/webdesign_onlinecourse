@@ -1,8 +1,8 @@
 @font-face {
     font-family: ProjectFont;
-    src: url(/font/DBHeaventCondv321.woff) format('woff2');
-}
+    src: url('../font/DBHeaventCondv321.ttf') ;
 
+}
 body {
     font-family: ProjectFont !important;
     background-color: #f5f5f5;
