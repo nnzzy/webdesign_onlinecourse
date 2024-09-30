@@ -434,5 +434,9 @@ footer{                 /* FOOTER KUB */
     .logoutbutton{
         display: block;
     }
+    footer{
+        bottom: 0px;
+        position: fixed;
+    }
 
 }
