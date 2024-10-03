@@ -171,7 +171,8 @@ h1 {
 }
 
 tbody img{
-    width: 9%;
+    width: 100%;
+    max-width: 10%;
     margin-right: 5%;
 }
 
@@ -223,10 +224,12 @@ tbody img{
 }
 
 .review{
+    width: fit-content;
+    height: fit-content;
     color: #000;
     margin-right: 25px;
     background-color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: thin solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -336,12 +339,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .rating-button {
-        margin: 10px 10% 10px 0px;
         display: block; 
-    }
-
-    .review{
-        margin: 10px 25px;
     }
 
     .course-table th, .course-table td {
@@ -359,8 +357,8 @@ footer{                 /* FOOTER KUB */
         height: auto;
     }
 
-    img{
-        width: 10%;
+    tbody img {
+        max-width: 10%;
     }
 
     .stat-item {
@@ -435,7 +433,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .rating-button {
-        margin-right: 0;
+        margin:0;
     }
 
     .course-details {
@@ -466,6 +464,10 @@ footer{                 /* FOOTER KUB */
 
     h2{
         margin-left: 1%;
+    }
+
+    tbody img {
+        max-width: 30%;
     }
 
     .course-stat {

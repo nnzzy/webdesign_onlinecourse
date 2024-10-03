@@ -268,7 +268,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .exam-card {
-        flex: 0 0 calc(50% - 20px); 
+        margin: 0 auto;
         margin-bottom: 20px;
         width: 160px; 
     }
@@ -327,7 +327,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .content {
-        flex-direction: column; /* จัดเรียงข้อความและรูปภาพเป็นแนวตั้ง */
+        flex-direction: column;
         padding: 10px;
     }
     
@@ -339,19 +339,19 @@ footer{                 /* FOOTER KUB */
         }
     
         .mock-exam-icon img {
-            width: 200px; /* ลดขนาดของรูปภาพ */
+            width: 200px;
         }
     
         .exam-options {
-            flex-direction: column; /* จัดเรียงการ์ดข้อสอบเป็นแนวตั้ง */
+            flex-direction: column; 
             border: none;
             padding: 10px;
             gap: 15px;
         }
     
         .exam-card {
-            width: 100%; /* การ์ดใช้ความกว้างเต็ม */
-            max-width: 300px; /* ตั้งค่าความกว้างสูงสุด */
+            width: 100%;
+            max-width: 300px;
             margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
         }
     

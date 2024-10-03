@@ -92,8 +92,8 @@ nav a:hover{        /* navbar naja*/
     height: auto;
 }
 
-.container {
-    max-width: 1200px;
+.container1 {
+    width:77%;
     margin: 20px auto;
     display: grid;
     gap: 20px;
@@ -168,8 +168,7 @@ nav a:hover{        /* navbar naja*/
 }
 
 .my{
-    max-width: 1300px;
-    width: 100%;
+    width: 77%;
     margin: 50px auto;
     background-color: white;
     padding: 20px;
@@ -291,34 +290,30 @@ footer{                 /* FOOTER KUB */
     }
 
     .profile-card {
-        width: 90%; /* ให้กล่องขยายเต็มความกว้างของหน้าจอแบบ responsive */
-        margin: 0 auto; /* จัดให้อยู่กลางหน้าจอ */
+        width: 100%; 
+        margin: 0 auto; 
     }
 
     .profile-img {
-        width: 120px; /* ลดขนาดของรูปโปรไฟล์ */
+        width: 120px;
         height: 120px;
     }
 
     .edit-btn {
         top: 10px;
         right: 10px;
-        padding: 5px 8px; /* ลดขนาดของปุ่ม */
+        padding: 5px 8px;
     }
 
     .course-card {
-        width: 90%; /* ลดขนาดการ์ดให้เล็กลง */
-        margin: 10px auto; /* จัดให้อยู่กลางหน้าจอ */
-        padding: 15px; /* ลด padding */
+        width: 90%;
+        margin: 10px auto; 
+        padding: 15px; 
     }
 
     .course-card img {
-        width: 80%; /* ลดขนาดของรูปในการ์ด */
+        width: 80%; 
         height: auto;
-    }
-
-    .my{
-        width: 90%;
     }
 
 }
@@ -375,10 +370,12 @@ footer{                 /* FOOTER KUB */
         font-size: 0.8em; 
     }
 
-    .container {
+    .container1 {
         width: 100%;
-        margin: 0 auto;
-        padding: 10px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns:1fr;
+        border: thin solid black;
     }
 
     .profile-card{
@@ -386,7 +383,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .news-card {
-        width: 310%;
+        width: 100%;
         height: auto;
         text-align: center;
 
@@ -399,8 +396,9 @@ footer{                 /* FOOTER KUB */
     .my {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+        border: thin solid black;
     }
 
     .courses {
@@ -409,7 +407,7 @@ footer{                 /* FOOTER KUB */
     }
 
     .course-card {
-        width: 80%; 
+        width: 100%; 
         margin-bottom: 20px; 
     }
 
