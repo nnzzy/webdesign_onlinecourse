@@ -162,7 +162,7 @@ h1{
 }
 
 .result img{
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
@@ -170,19 +170,22 @@ h1{
     display: flex;
     width: 70%;
 }
-.allresult{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
+.allresult {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     background-color: white;
-    width: 70%;
+    width: 100%;
     height: auto;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
 }
+
 .allresult .subject {
-    width: 100%; /* ให้แน่ใจว่า subject ใช้พื้นที่ทั้งหมดในเซลล์กริด */
+    flex-basis: calc(20% - 16px); /* 20% สำหรับ 5 คอลัมน์ และลบ gap */
+    max-width: calc(20% - 16px);
 }
 
 .result img {
@@ -322,10 +325,9 @@ footer{                 /* FOOTER KUB */
         font-size: 1.1em;
     }
 
-    .result{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .allresult .subject {
+        flex-basis: calc(50% - 10px); /* 50% สำหรับ 2 คอลัมน์ */
+        max-width: calc(50% - 10px);
     }
 }
 #filterbtn {
@@ -397,10 +399,9 @@ footer{                 /* FOOTER KUB */
         width: 100%;
     }
 
-    .result{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+    .allresult .subject {
+        flex-basis: 100%; /* 100% สำหรับ 1 คอลัมน์ */
+        max-width: 100%;
     }
     #filterbtn {
         display: block;
