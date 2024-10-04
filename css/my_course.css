@@ -6,10 +6,15 @@
 
 body{                                   /* setup */
     margin: 0;
+    padding: 0;
     font-family: ProjectFont !important;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255) !important;
+}
+
+.active{
+    color: #F4CE14;
 }
 
 img{
@@ -71,8 +76,6 @@ nav a:hover{        /* navbar naja*/
 .dropdown:hover .dropdown-content {     /* navbar naja*/
     display: block;
 }
-
-
 
 .right_icon{                    /* navbar naja*/
     margin-left: auto;
@@ -136,6 +139,7 @@ nav a:hover{        /* navbar naja*/
 .breadcrumb a{
     color: black;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 h1{
@@ -247,6 +251,36 @@ footer{                 /* FOOTER KUB */
 }
 .logoutbutton{
     display: none;
+}
+
+.dropdown-item {                /* NAV   */
+    position: relative;
+}
+
+.subdropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #45474b;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-item:hover .subdropdown-content {
+    display: block;
+}
+
+.subdropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+}
+
+.subdropdown-content a:hover {
+    background-color: #404041;
 }
 
 @media screen and (max-width: 1279px) {
@@ -415,6 +449,76 @@ footer{                 /* FOOTER KUB */
     }
     .logoutbutton{
         display: block;
+    }
+
+        /* ปรับแต่ง submenu สำหรับ mobile */
+    .subdropdown-content {
+        display: none;
+        position: static;
+        width: 100%;
+        background-color: #333;
+        padding-left: 20px;
+    }
+
+    .show-submenu {
+        display: block !important;
+    }
+
+    /* animation สำหรับ icon */
+    .fa-sort-desc {
+        transition: transform 0.3s ease;
+    }
+
+    /* ปรับแต่ง link ใน dropdown */
+    .dropdown-item {
+        width: 100%;
+    }
+
+    .dropdown-item a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+    }
+
+    /* ยกเลิก hover effect บน mobile */
+    .dropdown-item:hover .subdropdown-content {
+        display: none;
+    }
+
+    /* ปรับแต่ง submenu สำหรับ mobile */
+    .subdropdown-content {
+        display: none;
+        position: static;
+        width: 100%;
+        background-color: #333;
+        padding-left: 20px;
+    }
+
+    .show-submenu {
+        display: block !important;
+    }
+
+    /* animation สำหรับ icon */
+    .fa-sort-desc {
+        transition: transform 0.3s ease;
+    }
+
+    /* ปรับแต่ง link ใน dropdown */
+    .dropdown-item {
+        width: 100%;
+    }
+
+    .dropdown-item a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+    }
+
+    /* ยกเลิก hover effect บน mobile */
+    .dropdown-item:hover .subdropdown-content {
+        display: none;
     }
 
 }

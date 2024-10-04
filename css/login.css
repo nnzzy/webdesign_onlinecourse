@@ -267,7 +267,7 @@ footer{                 /* FOOTER KUB */
     display: none;
 }
 
-.dropdown-item {
+ .dropdown-item {                /* NAV   */
     position: relative;
 }
 
@@ -405,7 +405,6 @@ footer{                 /* FOOTER KUB */
         display: grid;
         gap: 20px;
         grid-template-columns:1fr;
-        border: thin solid black;
     }
 
     .profile-card{
@@ -428,7 +427,6 @@ footer{                 /* FOOTER KUB */
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        border: thin solid black;
     }
 
     .courses {
