@@ -22,13 +22,57 @@
         }
 
         function toggleDropdown2() {
-            var dropdown = document.getElementById("dropdownMenu1");
+            var dropdown = document.getElementById("dropdownMenu");
             if (dropdown.style.display === "none" || dropdown.style.display === "") {
                 dropdown.style.display = "block";
             } else {
                 dropdown.style.display = "none";
             }
         }
+
+        function toggleSubMenu(element) {
+    if (window.innerWidth <= 768) {
+        const submenu = element.nextElementSibling;
+        const icon = element.querySelector('.fa-sort-desc');
+
+        submenu.classList.toggle('show-submenu');
+   
+        if (icon) {
+            icon.style.transform = submenu.classList.contains('show-submenu') ? 'rotate(180deg)' : '';
+        }
+        const parent = element.closest('.dropdown-content');
+        if (parent) {
+            const allSubmenus = parent.querySelectorAll('.subdropdown-content');
+            const allIcons = parent.querySelectorAll('.fa-sort-desc');
+            
+            allSubmenus.forEach((menu) => {
+                if (menu !== submenu && menu.classList.contains('show-submenu')) {
+                    menu.classList.remove('show-submenu');
+                }
+            });
+            
+            allIcons.forEach((otherIcon) => {
+                if (otherIcon !== icon) {
+                    otherIcon.style.transform = '';
+                }
+            });
+        }
+    }
+}
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            dropdown.classList.remove('show');
+        });
+        document.querySelectorAll('.subdropdown-content').forEach(submenu => {
+            submenu.classList.remove('show-submenu');
+        });
+        document.querySelectorAll('.fa-sort-desc').forEach(icon => {
+            icon.style.transform = '';
+        });
+    }
+});
     </script>
 </head>
 <body>
@@ -36,11 +80,11 @@
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
         </a>
-
-            <a href="../html/login.html" class="WebLogo"><img src="../img/logo41.png" alt="Logo Web Site"></a>
-            
+    
+        <a href="./login.html" class="WebLogo"><img src="../img/logo41.png" alt="Logo Web Site"></a>
+                
         <div id="mylink" class="link">
-            <a href="../html/login.html">หน้าหลัก</a>
+            <a href="./login.html">หน้าหลัก</a>
             <div class="dropdown">
                 <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()" style="color: #F4CE14;">คอร์สเรียน <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
                     <div class="dropdown-content" id="dropdownMenu">
@@ -50,23 +94,51 @@
                     </div>
             </div>
             <div class="dropdown">
-                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown2()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
-                    <div class="dropdown-content" id="dropdownMenu1">
-                        <a href="examstorage_login.html">คลังข้อสอบ</a>
-                        <a href="book_login.html">หนังสือเสริมความรู้</a>
+                <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">คลังความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <div class="dropdown-item">
+                        <a href="javascript:void(0);" onclick="toggleSubMenu(this)">คลังข้อสอบ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <div class="subdropdown-content">
+                            <a href="./examdetail_login.html">TGAT1</a>
+                            <a href="#">TGAT2</a>
+                            <a href="#">TGAT3</a>
+                            <a href="#">TPAT1</a>
+                            <a href="#">TPAT3</a>
+                            <a href="#">TPAT4</a>
+                            <a href="#">ภาษาไทย</a>
+                            <a href="#">ภาษาอังกฤษ</a>
+                            <a href="#">คณิตศาสตร์</a>
+                            <a href="#">ชีวะ</a>
+                            <a href="#">เคมี</a>
+                            <a href="#">ฟิสิกส์</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="javascript:void(0);" onclick="toggleSubMenu(this)">หนังสือเสริมความรู้ <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                        <div class="subdropdown-content">
+                            <a href="./thaibook_login.html">หนังสือไทย</a>
+                            <a href="#">หนังสืออังกฤษ</a>
+                            <a href="#">หนังสือคณิต</a>
+                            <a href="#">หนังสือฟิสิกส์</a>
+                            <a href="#">หนังสือเคมี</a>
+                            <a href="#">หนังสือชีวะ</a>
+                        </div>
                     </div>
                 </div>
-            <a href="../html/mockexam.html">จำลองการสอบ</a>
+            </div>
+    
+            <a href="./mockexam.html">จำลองการสอบ</a>
             <a href="../html/aboutus_login.html">เกี่ยวกับเรา</a>
             <a href="../index.html" class="logoutbutton">ออกจากระบบ</a>
         </div>
-            
+    
         <div class="right_icon">
-            <a href="cart_login.html" class="CartLogo"><img src="../img/cart1.png" alt="Cart Logo" width="30" height="30"></a>
-            <a href="edit_profile.html" class="UserLogo"><img src="../img/user1.png" alt="User Logo" ></a>
+            <a href="./cart_login.html" class="CartLogo"><img src="../img/cart1.png" alt="Cart Logo" width="30" height="30"></a>
+            <a href="./edit_profile.html" class="UserLogo"><img src="../img/user1.png" alt="User Logo" ></a>
         </div>
     </nav>
-    <br>
+
+<br>
 
     <p class="breadcrumb"> <a href=".//login.html">หน้าหลัก / </a><a href="my_course.html"> คอร์สเรียนของฉัน/</a><a href="my_course.html"> คอร์สเรียนวิชาภาษาไทย</a></p>
 

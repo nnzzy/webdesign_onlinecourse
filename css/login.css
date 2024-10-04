@@ -267,7 +267,7 @@ footer{                 /* FOOTER KUB */
     display: none;
 }
 
-.dropdown-item {
+ .dropdown-item {                /* NAV   */
     position: relative;
 }
 
