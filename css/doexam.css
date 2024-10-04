@@ -258,8 +258,8 @@ footer{                 /* FOOTER KUB */
     display: none;
 }
 footer{
+    margin-top: 2%;
     width: 100%;
-    position: fixed;
     bottom: 0px;
 }
 @media screen and (max-width: 1279px) {
